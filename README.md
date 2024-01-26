@@ -6,7 +6,7 @@ We try to keep each part of the tutorial as short as possible.
 
 ## Basic
 
-* Setting Up
+* [Setting Up](./tutorial/setting_up.md)
 * A Bevy Project That Does Nothing
 * Systems
   * They Are Functions In Bevy
