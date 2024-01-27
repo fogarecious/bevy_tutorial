@@ -7,7 +7,7 @@ We try to keep each part of the tutorial as short as possible.
 ## Basic
 
 * [Setting Up](./tutorial/setting_up.md)
-* A Bevy Project That Does Nothing
+* [A Bevy Project That Does Nothing](./tutorial/a_bevy_project_that_does_nothing.md)
 * Systems
   * They Are Functions In Bevy
   * The Main Scheduler For Systems
