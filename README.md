@@ -12,6 +12,8 @@ We try to keep each part of the tutorial as short as possible.
   * They Are Functions In Bevy
   * The Main Scheduler For Systems
   * Executing Multiple Systems Simultaneously
+  * Executing Multiple Systems In Order
+  * Using Local Variables In Systems
 * Resources
   * They Are Singleton Structs
   * Updating Resources
@@ -22,7 +24,7 @@ We try to keep each part of the tutorial as short as possible.
   * Entities Can Have Different Components
   * Bundles Help Us Grouping Components Together
   * Searching For Entities By Optional Components
-  * Searching For Entities With Filters
+  * Searching For Entities With Filters <!-- without -->
   * Searching For The Only Entity
   * Searching And Updating Entities
   * Searching And Removing Entities
@@ -36,8 +38,8 @@ We try to keep each part of the tutorial as short as possible.
   * The Main Scheduler For Windowed App
   * Initializing A Different Window
   * Changing The Window After Initialization
-  * Low-CPU Windows
-  * Closing The Window On ESC Pressed
+  * Low-Power Windows
+  * Closing The Window On Esc Pressed
 * Camera 2D <!-- (origin, positive x y) -->
 * The Background Color
 * Images
@@ -83,13 +85,14 @@ We try to keep each part of the tutorial as short as possible.
 
 <!-- * User Interfaces -->
 
+<!-- multiple windows/cameras -->
 <!-- gizmos -->
 <!-- animation -->
 <!-- stages? -->
 <!-- audio? -->
 <!-- remove systems -->
 
-## See also
+## See Also
 
 * [Bevy](https://github.com/bevyengine/bevy) - the GitHub of the Bevy game engine.
 * [Bevy Cheat Book](https://bevy-cheatbook.github.io/) - a reference-style book for the Bevy game engine.
