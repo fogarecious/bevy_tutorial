@@ -9,7 +9,7 @@ We try to keep each part of the tutorial as short as possible.
 * [Setting Up](./tutorial/setting_up.md)
 * [A Bevy Project That Does Nothing](./tutorial/a_bevy_project_that_does_nothing.md)
 * Systems
-  * They Are Functions In Bevy
+  * [They Are Functions In Bevy](./tutorial/they_are_functions_in_bevy.md)
   * The Default Scheduler For Systems
   * Executing Multiple Systems Simultaneously
   * Executing Multiple Systems In Order <!-- 15, recursive -->
