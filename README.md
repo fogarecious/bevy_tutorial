@@ -10,9 +10,9 @@ We try to keep each part of the tutorial as short as possible.
 * [A Bevy Project That Does Nothing](./tutorial/a_bevy_project_that_does_nothing.md)
 * Systems
   * They Are Functions In Bevy
-  * The Main Scheduler For Systems
+  * The Default Scheduler For Systems
   * Executing Multiple Systems Simultaneously
-  * Executing Multiple Systems In Order
+  * Executing Multiple Systems In Order <!-- 15, recursive -->
   * Using Local Variables In Systems
 * Resources
   * They Are Singleton Structs
@@ -25,7 +25,7 @@ We try to keep each part of the tutorial as short as possible.
   * Bundles Help Us Grouping Components Together
   * Searching For Entities By Optional Components
   * Searching For Entities With Filters <!-- without -->
-  * Searching For The Only Entity
+  * Searching For The Only Entity <!-- get_ -->
   * Searching And Updating Entities
   * Searching And Removing Entities
   * Removing Entities Directly
@@ -35,7 +35,7 @@ We try to keep each part of the tutorial as short as possible.
 
 * Windows
   * An App With A Window
-  * The Main Scheduler For Windowed App
+  * The Default Scheduler For Windowed App
   * Initializing A Different Window
   * Changing The Window After Initialization
   * Low-Power Windows
