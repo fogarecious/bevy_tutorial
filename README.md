@@ -11,8 +11,8 @@ We try to keep each part of the tutorial as short as possible.
 * Systems
   * [They Are Functions In Bevy](./tutorial/they_are_functions_in_bevy.md)
   * The Default Scheduler For Systems
-  * Executing Multiple Systems Simultaneously
-  * Executing Multiple Systems In Order <!-- 15, recursive -->
+  * Executing Multiple Systems Simultaneously <!-- diff order, parallel, 15, recursive -->
+  * Executing Multiple Systems In Order <!-- chain, before/after, IntoSystemConfigs -->
   * Using Local Variables In Systems
 * Resources
   * They Are Singleton Structs
@@ -29,6 +29,7 @@ We try to keep each part of the tutorial as short as possible.
   * Searching And Updating Entities
   * Searching And Removing Entities
   * Removing Entities Directly
+* Turning Off A System <!-- run_if -->
 * Faster Compile Time <!-- (remove in release) -->
 
 ## 2D Rendering
