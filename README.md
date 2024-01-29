@@ -10,7 +10,7 @@ We try to keep each part of the tutorial as short as possible.
 * [A Bevy Project That Does Nothing](./tutorial/a_bevy_project_that_does_nothing.md)
 * Systems
   * [They Are Functions In Bevy](./tutorial/they_are_functions_in_bevy.md)
-  * The Default Scheduler For Systems
+  * [The Default Scheduler For Systems](./tutorial/the_default_scheduler_for_systems.md)
   * Executing Multiple Systems Simultaneously <!-- diff order, parallel, 15, recursive -->
   * Executing Multiple Systems In Order <!-- chain, before/after, IntoSystemConfigs -->
   * Using Local Variables In Systems
