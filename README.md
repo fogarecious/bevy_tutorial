@@ -13,6 +13,7 @@ We try to keep each part of the tutorial as short as possible.
   * [The Default Scheduler For Systems](./tutorial/the_default_scheduler_for_systems.md)
   * Executing Multiple Systems Simultaneously <!-- diff order, parallel, 15, recursive -->
   * Executing Multiple Systems In Order <!-- chain, before/after, IntoSystemConfigs -->
+  * Executing Multiple Systems Set By Set <!-- configure_sets, in_set, SystemSet -->
   * Using Local Variables In Systems
 * Resources
   * They Are Singleton Structs
@@ -20,7 +21,7 @@ We try to keep each part of the tutorial as short as possible.
   * Removing Resources
 * Entities And Components
   * They Are Like Tables
-  * Searching For Entities By Components
+  * Searching For Entities By Components <!-- query one or more components -->
   * Entities Can Have Different Components
   * Bundles Help Us Grouping Components Together
   * Searching For Entities By Optional Components
