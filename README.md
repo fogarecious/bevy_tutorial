@@ -12,7 +12,7 @@ We try to keep each part of the tutorial as short as possible.
   * [They Are Functions In Bevy](./tutorial/they_are_functions_in_bevy.md)
   * [The Default Scheduler For Systems](./tutorial/the_default_scheduler_for_systems.md)
   * [Executing Multiple Systems Simultaneously](./tutorial/executing_multiple_systems_simultaneously.md)
-  * Executing Multiple Systems In Order <!-- chain, before/after, IntoSystemConfigs -->
+  * [Executing Multiple Systems In Order](./tutorial/executing_multiple_systems_in_order.md)
   * Executing Multiple Systems Set By Set <!-- configure_sets, in_set, SystemSet, multi-sys in set -->
   <!-- pipe -->
   * Using Local Variables In Systems <!-- 15, SystemParamFunction -->
