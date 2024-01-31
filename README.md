@@ -13,10 +13,11 @@ We try to keep each part of the tutorial as short as possible.
   * [The Default Scheduler For Systems](./tutorial/the_default_scheduler_for_systems.md)
   * [Executing Multiple Systems Simultaneously](./tutorial/executing_multiple_systems_simultaneously.md)
   * Executing Multiple Systems In Order <!-- chain, before/after, IntoSystemConfigs -->
-  * Executing Multiple Systems Set By Set <!-- configure_sets, in_set, SystemSet -->
-  * Using Local Variables In Systems
+  * Executing Multiple Systems Set By Set <!-- configure_sets, in_set, SystemSet, multi-sys in set -->
+  <!-- pipe -->
+  * Using Local Variables In Systems <!-- 15, SystemParamFunction -->
 * Resources
-  * They Are Singleton Structs
+  * They Are Singleton Structs <!-- insert_resource, init_resource -->
   * Updating Resources
   * Removing Resources
 * Entities And Components
@@ -28,9 +29,8 @@ We try to keep each part of the tutorial as short as possible.
   * Searching For Entities With Filters <!-- without -->
   * Searching For The Only Entity <!-- get_ -->
   * Searching And Updating Entities
-  * Searching And Removing Entities
-  * Removing Entities Directly
-* Turning Off A System <!-- run_if -->
+  * Searching And Removing Entities <!-- Query<Entity>, for e in &query, commands.entity(e).despawn_recursive() -->
+  * Removing Entities Directly <!-- id -->
 * Faster Compile Time <!-- (remove in release) -->
 
 ## 2D Rendering
@@ -71,7 +71,23 @@ We try to keep each part of the tutorial as short as possible.
 * Timers
   <!-- * (time, w/ w/o repeat) -->
 * Triggering An Event <!-- (exit) -->
-* Custom Events
+* Custom Events <!-- event.rs -->
+
+## States
+
+* Turning On/Off A System <!-- run_if -->
+* Using The State Machine
+* Changing States
+* Monitoring State Transition
+<!-- generic_system.rs -->
+<!-- derive States -->
+<!-- enum AppState -->
+<!-- add_state::<AppState>() -->
+<!-- add_systems(OnExit(AppState::MainMenu), ...) -->
+<!-- OnEnter, OnExit, OnTransition -->
+<!-- run_if(in_state(AppState::MainMenu)) -->
+<!-- ResMut<NextState<AppState>> -->
+<!-- NextState, next_state.set -->
 
 ## 3D Rendering
 
@@ -90,9 +106,7 @@ We try to keep each part of the tutorial as short as possible.
 <!-- multiple windows/cameras -->
 <!-- gizmos -->
 <!-- animation -->
-<!-- stages? -->
 <!-- audio? -->
-<!-- remove systems -->
 
 ## See Also
 
