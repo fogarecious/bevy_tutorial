@@ -54,7 +54,7 @@ fn hello_b() {
 
 We will see `Hello A!` and `Hello B!` appears at the same time.
 
-The number of systems in a pair of parentheses is limited to 15.
+The number of systems in a pair of parentheses is limited to 20 (see [IntoSystemConfigs implementations](https://docs.rs/bevy/latest/bevy/ecs/schedule/trait.IntoSystemConfigs.html#foreign-impls)).
 Yet, we can have more parentheses inside.
 
 ```rust
