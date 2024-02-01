@@ -13,7 +13,7 @@ We try to keep each part of the tutorial as short as possible.
   * [The Default Scheduler For Systems](./tutorial/the_default_scheduler_for_systems.md)
   * [Executing Multiple Systems Simultaneously](./tutorial/executing_multiple_systems_simultaneously.md)
   * [Executing Multiple Systems In Order](./tutorial/executing_multiple_systems_in_order.md)
-  * Executing Multiple Systems Set By Set <!-- configure_sets, in_set, SystemSet, multi-sys in set -->
+  * [Executing Multiple Systems Set By Set](./tutorial/executing_multiple_systems_set_by_set.md)
 * Resources
   * They Are Singleton Structs
     <!-- insert_resource, init_resource -->
