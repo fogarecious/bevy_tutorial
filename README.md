@@ -2,7 +2,7 @@
 
 [Bevy](https://bevyengine.org/) is a game engine built in [Rust](https://www.rust-lang.org/).
 This tutorial serves as a quick start for [Bevy](https://bevyengine.org/).
-We try to keep each part of the tutorial as short as possible.
+We try to keep each part of the tutorial as simple as possible.
 
 ## Basic
 
@@ -19,6 +19,7 @@ We try to keep each part of the tutorial as short as possible.
     <!-- insert_resource, init_resource -->
   * Updating Resources
   * Removing Resources
+    <!-- commands -->
 * Entities And Components
   * They Are Like Tables
   * Searching For Entities By Components
@@ -60,7 +61,10 @@ We try to keep each part of the tutorial as short as possible.
   * Scale
   * Combining Multiple Transformation
 * Texts
-  <!-- display, anchors, font, style(?) -->
+  * Displaying Texts
+  * Text Anchors
+  * Font And Styles
+  <!-- text2d.rs -->
 * Shapes
   <!-- different shapes -->
 * Materials
@@ -110,6 +114,8 @@ We try to keep each part of the tutorial as short as possible.
 * Lighting
 * Physically Based Rendering
 * Fog
+* Skipping The White Window
+  <!-- window_settings.rs -->
 <!-- ? multiple windows/cameras, camera background, 2d+3d -->
 
 <!-- * User Interfaces -->
@@ -118,6 +124,7 @@ We try to keep each part of the tutorial as short as possible.
   <!-- * Using Local Variables In Systems
   15, SystemParamFunction -->
   <!-- gizmos -->
+  <!-- 2d_gizmos.rs -->
 
 <!-- animation -->
 <!-- audio? -->
