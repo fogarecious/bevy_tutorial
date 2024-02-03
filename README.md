@@ -21,22 +21,29 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- commands -->
 * Entities And Components
   * They Are Like Tables
+    <!-- table, row, col, entity, component, spawn -->
+    <!-- soldier, name, hp -->
   * Searching For Entities By Components
-    <!-- query one or more components -->
+    <!-- query one or more components, name, name hp -->
   * Entities Can Have Different Components
+  <!-- wizard, name, hp, mp -->
   * Bundles Help Us Grouping Components Together
   * Searching For Entities By Optional Components
+  <!-- fights for us, and knows how to use magic -->
   * Searching For Entities With Filters
-    <!-- without -->
+    <!-- with, without -->
   * Searching For The Only Entity
     <!-- get_ -->
   * Searching And Updating Entities
+    <!-- mut query, single_mut -->
   * Searching And Removing Entities
-    <!-- Query<Entity>, for e in &query, commands.entity(e).despawn_recursive() -->
-  * Removing Entities Directly <!-- id -->
+    <!-- Query<Entity>, for e in &query, commands.entity(e).despawn_(recursive?)() -->
+  * Removing Entities Directly
+    <!-- id -->
 * Too Many Parameters
   <!-- system_param.rs -->
-* Faster Compile Time <!-- (remove in release) -->
+* Faster Compile Time
+  <!-- (remove in release) -->
 
 ## 2D Rendering
 
@@ -65,9 +72,14 @@ We try to keep each part of the tutorial as simple as possible.
   * Font And Styles
   <!-- text2d.rs -->
 * Shapes
-  <!-- different shapes -->
+  * Circles
+  * Quads
+  * RegularPolygons
+  <!-- bevy::prelude::shape -->
 * Materials
-  <!-- colors, textures -->
+  * Colors
+  * Textures
+    <!-- diff shapes -->
 
 ## Input
 
@@ -126,7 +138,9 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- 2d_gizmos.rs -->
 
 <!-- animation -->
+  <!-- sprite_sheet.rs -->
 <!-- audio? -->
+<!-- beyond bevy -->
 
 ## See Also
 
