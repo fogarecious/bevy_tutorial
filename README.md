@@ -16,7 +16,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Executing Multiple Systems Set By Set](./tutorial/executing_multiple_systems_set_by_set.md)
 * Resources
   * [They Are Singleton Structs](./tutorial/they_are_singleton_structs.md)
-  * Updating Resources
+  * [Updating Resources](./tutorial/updating_resources.md)
   * Removing Resources
     <!-- commands -->
 * Entities And Components

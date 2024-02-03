@@ -51,3 +51,5 @@ Then we can use the [init_resource](https://docs.rs/bevy/latest/bevy/app/struct.
 ```rust
 init_resource::<MyResource>()
 ```
+
+:arrow_right:  Next: [Updating Resources](./updating_resources.md)
