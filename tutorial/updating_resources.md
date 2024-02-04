@@ -42,3 +42,5 @@ Output:
 ```text
 11
 ```
+
+:arrow_right:  Next: [Removing Resources](./removing_resources.md)

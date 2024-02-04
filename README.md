@@ -17,31 +17,35 @@ We try to keep each part of the tutorial as simple as possible.
 * Resources
   * [They Are Singleton Structs](./tutorial/they_are_singleton_structs.md)
   * [Updating Resources](./tutorial/updating_resources.md)
-  * Removing Resources
-    <!-- commands -->
+  * [Removing Resources](./tutorial/removing_resources.md)
 * Entities And Components
   * They Are Like Tables
     <!-- table, row, col, entity, component, spawn -->
     <!-- soldier, name, hp -->
   * Searching For Entities By Components
     <!-- query one or more components, name, name hp -->
+    <!-- output_names, output_hps, output_names_and_hps -->
   * Entities Can Have Different Components
-  <!-- wizard, name, hp, mp -->
+    <!-- wizard, name, hp, mp -->
+    <!-- output_names_and_hps, output_names_and_mps -->
+    <!-- single component, no need parentheses -->
   * Bundles Help Us Grouping Components Together
+    <!-- SoldierBundles, WizardBundles -->
   * Searching For Entities By Optional Components
-  <!-- fights for us, and knows how to use magic -->
+    <!-- fights for us, and knows how to use magic -->
   * Searching For Entities With Filters
-    <!-- with, without -->
+    <!-- name, with mp, without mp -->
   * Searching For The Only Entity
-    <!-- get_ -->
+    <!-- single, get_single -->
   * Searching And Updating Entities
-    <!-- mut query, single_mut -->
+    <!-- mut query, single_mut, (get_single_mut) -->
   * Searching And Removing Entities
     <!-- Query<Entity>, for e in &query, commands.entity(e).despawn_(recursive?)() -->
   * Removing Entities Directly
     <!-- id -->
 * Too Many Parameters
   <!-- system_param.rs -->
+  <!-- bundle for spawn, sys param for query -->
 * Faster Compile Time
   <!-- (remove in release) -->
 
