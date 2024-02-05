@@ -42,3 +42,5 @@ The execution of the code gets panic in the `output_value` system, since the `My
 In the code above, we put `remove_my_resource` and `output_value` in different schedules ([Startup](https://docs.rs/bevy/latest/bevy/app/struct.Startup.html) and [Update](https://docs.rs/bevy/latest/bevy/app/struct.Update.html) respectively).
 This gives [Bevy](https://bevyengine.org/) enough time to update the internal data structure.
 If we put the functions in the same schedule, the update will not be reflected.
+
+:arrow_right:  Next: [They Are Like Tables](./they_are_like_tables.md)

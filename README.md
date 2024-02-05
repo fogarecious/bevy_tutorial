@@ -19,16 +19,15 @@ We try to keep each part of the tutorial as simple as possible.
   * [Updating Resources](./tutorial/updating_resources.md)
   * [Removing Resources](./tutorial/removing_resources.md)
 * Entities And Components
-  * They Are Like Tables
-    <!-- table, row, col, entity, component, spawn -->
-    <!-- soldier, name, hp -->
+  * [They Are Like Tables](./tutorial/they_are_like_tables.md)
   * Searching For Entities By Components
     <!-- query one or more components, name, name hp -->
+    <!-- single component, no need parentheses -->
     <!-- output_names, output_hps, output_names_and_hps -->
+    <!-- hp name -->
   * Entities Can Have Different Components
     <!-- wizard, name, hp, mp -->
-    <!-- output_names_and_hps, output_names_and_mps -->
-    <!-- single component, no need parentheses -->
+    <!-- output_names, output_names_and_hps, output_names_and_mps -->
   * Bundles Help Us Grouping Components Together
     <!-- SoldierBundles, WizardBundles -->
   * Searching For Entities By Optional Components
