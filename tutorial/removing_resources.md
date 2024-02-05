@@ -10,7 +10,7 @@ Note that it is [Commands](https://docs.rs/bevy/latest/bevy/ecs/system/struct.Co
 
 ```rust
 use bevy::{
-    app::{App, Last, Startup},
+    app::{App, Startup, Update},
     ecs::system::{Commands, Res, Resource},
 };
 
@@ -18,7 +18,7 @@ fn main() {
     App::new()
         .insert_resource(MyResource { value: 10 })
         .add_systems(Startup, remove_my_resource)
-        .add_systems(Last, output_value)
+        .add_systems(Update, output_value)
         .run();
 }
 
@@ -38,3 +38,7 @@ fn output_value(r: Res<MyResource>) {
 ```
 
 The execution of the code gets panic in the `output_value` system, since the `MyResource` has been removed.
+
+In the code above, we put `remove_my_resource` and `output_value` in different schedules ([Startup](https://docs.rs/bevy/latest/bevy/app/struct.Startup.html) and [Update](https://docs.rs/bevy/latest/bevy/app/struct.Update.html) respectively).
+This gives [Bevy](https://bevyengine.org/) enough time to update the internal data structure.
+If we put the functions in the same schedule, the update will not be reflected.
