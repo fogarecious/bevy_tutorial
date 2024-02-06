@@ -53,3 +53,5 @@ fn add_players(mut commands: Commands) {
 
 We put some specified components in a pair of parentheses and pass the parentheses to the [spawn](https://docs.rs/bevy/latest/bevy/ecs/system/struct.Commands.html#method.spawn) method.
 Each [spawn](https://docs.rs/bevy/latest/bevy/ecs/system/struct.Commands.html#method.spawn) creates an entity and add it to the [App](https://docs.rs/bevy/latest/bevy/app/struct.App.html).
+
+:arrow_right:  Next: [Searching For Entities By Components](./searching_for_entities_by_components.md)

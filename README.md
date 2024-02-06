@@ -20,11 +20,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Removing Resources](./tutorial/removing_resources.md)
 * Entities And Components
   * [They Are Like Tables](./tutorial/they_are_like_tables.md)
-  * Searching For Entities By Components
-    <!-- query one or more components, name, name hp -->
-    <!-- single component, no need parentheses -->
-    <!-- output_names, output_hps, output_names_and_hps -->
-    <!-- hp name -->
+  * [Searching For Entities By Components](./tutorial/searching_for_entities_by_components.md)
   * Entities Can Have Different Components
     <!-- wizard, name, hp, mp -->
     <!-- output_names, output_names_and_hps, output_names_and_mps -->
@@ -45,6 +41,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Too Many Parameters
   <!-- system_param.rs -->
   <!-- bundle for spawn, sys param for query -->
+  <!-- name, hp, with mp -->
 * Faster Compile Time
   <!-- (remove in release) -->
 
@@ -54,12 +51,16 @@ We try to keep each part of the tutorial as simple as possible.
   * An App With A Window
   * The Default Scheduler For Windowed App
   * Initializing A Different Window
+    <!-- window_settings.rs -->
   * Changing The Window After Initialization
+    <!-- window_settings.rs -->
   * Low-Power Windows
+    <!-- low_power.rs -->
   * Closing The Window On Esc Pressed
 * Camera 2D
   <!-- (origin, positive x y) -->
 * The Background Color
+  <!-- clear_color.rs -->
 * Images
   * Displaying Images
   * Obtaining Sizes Of Images
