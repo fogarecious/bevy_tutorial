@@ -44,3 +44,5 @@ Output:
 ```
 
 :arrow_right:  Next: [Removing Resources](./removing_resources.md)
+
+:blue_book: Back: [Table of contents](./../README.md)

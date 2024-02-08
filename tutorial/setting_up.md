@@ -25,3 +25,5 @@ bevy = "0.12.1"
 Now, you are ready to exploit the power of [Bevy](https://bevyengine.org/).
 
 :arrow_right:  Next: [A Bevy Project That Does Nothing](./a_bevy_project_that_does_nothing.md)
+
+:blue_book: Back: [Table of contents](./../README.md)

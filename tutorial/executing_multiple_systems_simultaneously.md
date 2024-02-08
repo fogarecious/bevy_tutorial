@@ -64,3 +64,5 @@ add_systems(Startup, (hello_a, (hello_b, hello_c)))
 The added parentheses can be recursive, so the number of systems we can have can be treated as unlimited conceptually.
 
 :arrow_right:  Next: [Executing Multiple Systems In Order](./executing_multiple_systems_in_order.md)
+
+:blue_book: Back: [Table of contents](./../README.md)

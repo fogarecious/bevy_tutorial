@@ -53,3 +53,5 @@ init_resource::<MyResource>()
 ```
 
 :arrow_right:  Next: [Updating Resources](./updating_resources.md)
+
+:blue_book: Back: [Table of contents](./../README.md)
