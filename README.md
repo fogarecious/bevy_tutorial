@@ -22,11 +22,9 @@ We try to keep each part of the tutorial as simple as possible.
   * [They Are Like Tables](./tutorial/they_are_like_tables.md)
   * [Searching For Entities By Components](./tutorial/searching_for_entities_by_components.md)
   * [Entities Can Have Different Components](./tutorial/entities_can_have_different_components.md)
-  * Bundles Help Us Grouping Components Together
-    <!-- SoldierBundle, WizardBundle -->
-    <!-- not forget -->
+  * [Bundles Help Us Grouping Components Together](./tutorial/bundles_help_us_grouping_components_together.md)
   * Searching For Entities By Optional Components
-    <!-- fights for us, and knows how to use magic -->
+    <!-- ? fights for us, and knows how to use magic -->
   * Searching For Entities With Filters
     <!-- name, with mp, without mp -->
   * Searching For The Only Entity

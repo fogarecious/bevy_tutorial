@@ -108,3 +108,7 @@ Since the wizards are the only players having `Mp`, they are printed.
 To get the same result, we can also use `Query<(&Name, &HP, &Mp)>` instead of `Query<(&Name, &Mp)>`.
 
 Adding unique components helps us having basic filtering of the entities.
+
+:arrow_right:  Next: [Bundles Help Us Grouping Components Together](./bundles_help_us_grouping_components_together.md)
+
+:blue_book: Back: [Table of contents](./../README.md)
