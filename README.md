@@ -23,8 +23,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Searching For Entities By Components](./tutorial/searching_for_entities_by_components.md)
   * [Entities Can Have Different Components](./tutorial/entities_can_have_different_components.md)
   * [Bundles Help Us Grouping Components Together](./tutorial/bundles_help_us_grouping_components_together.md)
-  * Searching For Entities By Optional Components
-    <!-- ? fights for us, and knows how to use magic -->
+  * [Searching For Entities By Optional Components](./tutorial/searching_for_entities_by_optional_components.md)
   * Searching For Entities With Filters
     <!-- name, with mp, without mp -->
   * Searching For The Only Entity
@@ -141,7 +140,8 @@ We try to keep each part of the tutorial as simple as possible.
 
 <!-- animation -->
   <!-- sprite_sheet.rs -->
-<!-- audio? -->
+<!-- audio -->
+<!-- plugin -->
 <!-- beyond bevy -->
 
 ## See Also

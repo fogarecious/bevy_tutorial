@@ -100,3 +100,7 @@ Name: Wizard 2, HP: 30
 ```
 
 Spawning a bundle is equivalent to spawn a tuple of its inner components.
+
+:arrow_right:  Next: [Searching For Entities By Optional Components](./searching_for_entities_by_optional_components.md)
+
+:blue_book: Back: [Table of contents](./../README.md)
