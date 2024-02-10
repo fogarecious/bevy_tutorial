@@ -103,3 +103,7 @@ Name: Wizard 1, HP: 50, MP: 30
 Name: Wizard 2, HP: 30, MP: 60
 
 ```
+
+:arrow_right:  Next: [Searching For Entities With Filters](./searching_for_entities_with_filters.md)
+
+:blue_book: Back: [Table of contents](./../README.md)

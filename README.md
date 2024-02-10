@@ -24,8 +24,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Entities Can Have Different Components](./tutorial/entities_can_have_different_components.md)
   * [Bundles Help Us Grouping Components Together](./tutorial/bundles_help_us_grouping_components_together.md)
   * [Searching For Entities By Optional Components](./tutorial/searching_for_entities_by_optional_components.md)
-  * Searching For Entities With Filters
-    <!-- name, with mp, without mp -->
+  * [Searching For Entities With Filters](./tutorial/searching_for_entities_with_filters.md)
   * Searching For The Only Entity
     <!-- single, get_single -->
     <!-- only one, but want to use query -->
