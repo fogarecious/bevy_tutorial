@@ -25,9 +25,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Bundles Help Us Grouping Components Together](./tutorial/bundles_help_us_grouping_components_together.md)
   * [Searching For Entities By Optional Components](./tutorial/searching_for_entities_by_optional_components.md)
   * [Searching For Entities With Filters](./tutorial/searching_for_entities_with_filters.md)
-  * Searching For The Only Entity
-    <!-- single, get_single -->
-    <!-- only one, but want to use query -->
+  * [Searching For The Only Entity](./tutorial/searching_for_the_only_entity.md)
   * Searching And Updating Entities
     <!-- mut query, single_mut, (get_single_mut) -->
   * Searching And Removing Entities
