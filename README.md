@@ -26,8 +26,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Searching For Entities By Optional Components](./tutorial/searching_for_entities_by_optional_components.md)
   * [Searching For Entities With Filters](./tutorial/searching_for_entities_with_filters.md)
   * [Searching For The Only Entity](./tutorial/searching_for_the_only_entity.md)
-  * Searching And Updating Entities
-    <!-- mut query, single_mut, (get_single_mut) -->
+  * [Searching And Updating Entities](./tutorial/searching_and_updating_entities.md)
   * Searching And Removing Entities
     <!-- Query<Entity>, for e in &query, commands.entity(e).despawn_(recursive?)() -->
   * Removing Entities Directly

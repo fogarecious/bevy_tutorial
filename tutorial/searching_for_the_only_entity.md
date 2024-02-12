@@ -66,6 +66,6 @@ Output:
 Name: Final boss, HP: 99999
 ```
 
-<!-- :arrow_right:  Next: -->
+:arrow_right:  Next: [Searching And Updating Entities](./searching_and_updating_entities.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
