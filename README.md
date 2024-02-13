@@ -27,8 +27,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Searching For Entities With Filters](./tutorial/searching_for_entities_with_filters.md)
   * [Searching For The Only Entity](./tutorial/searching_for_the_only_entity.md)
   * [Searching And Updating Entities](./tutorial/searching_and_updating_entities.md)
-  * Searching And Removing Entities
-    <!-- Query<Entity>, for e in &query, commands.entity(e).despawn_(recursive?)() -->
+  * [Searching And Removing Entities](./tutorial/searching_and_removing_entities.md)
   * Removing Entities Directly
     <!-- id -->
 * Too Many Parameters
@@ -138,6 +137,7 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- sprite_sheet.rs -->
 <!-- audio -->
 <!-- plugin -->
+<!-- wasm, my practice, 26_wasm_test -->
 <!-- beyond bevy -->
 
 ## See Also
