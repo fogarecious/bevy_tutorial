@@ -28,8 +28,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Searching For The Only Entity](./tutorial/searching_for_the_only_entity.md)
   * [Searching And Updating Entities](./tutorial/searching_and_updating_entities.md)
   * [Searching And Removing Entities](./tutorial/searching_and_removing_entities.md)
-  * Removing Entities Directly
-    <!-- id -->
+  * [Removing Entities Directly](./tutorial/removing_entities_directly.md)
 * Too Many Parameters
   * Too Many Type Parameters For Queries
     <!-- bundle for spawn, world query for query -->

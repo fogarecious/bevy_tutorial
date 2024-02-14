@@ -95,6 +95,6 @@ Name: Friend 2, HP: 250
 Name: Friend 3, HP: 150
 ```
 
-<!-- :arrow_right:  Next: -->
+:arrow_right:  Next: [Removing Entities Directly](./removing_entities_directly.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
