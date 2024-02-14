@@ -31,9 +31,12 @@ We try to keep each part of the tutorial as simple as possible.
   * Removing Entities Directly
     <!-- id -->
 * Too Many Parameters
-  <!-- system_param.rs -->
-  <!-- bundle for spawn, sys param for query -->
-  <!-- name, hp, with mp -->
+  * Too Many Type Parameters For Queries
+    <!-- bundle for spawn, world query for query -->
+  * Too Many Parameters For Systems
+    <!-- system_param.rs -->
+    <!-- query and resource -->
+    <!-- name, hp, with mp -->
 * Faster Compile Time
   <!-- (remove in release) -->
 
