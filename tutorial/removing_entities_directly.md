@@ -91,6 +91,6 @@ Name: Enemy 3, HP: 150
 
 ```
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Too Many Type Parameters For Queries](./too_many_type_parameters_for_queries.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

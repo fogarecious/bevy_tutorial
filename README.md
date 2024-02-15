@@ -30,8 +30,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Searching And Removing Entities](./tutorial/searching_and_removing_entities.md)
   * [Removing Entities Directly](./tutorial/removing_entities_directly.md)
 * Too Many Parameters
-  * Too Many Type Parameters For Queries
-    <!-- bundle for spawn, world query for query -->
+  * [Too Many Type Parameters For Queries](./tutorial/too_many_type_parameters_for_queries.md)
   * Too Many Parameters For Systems
     <!-- system_param.rs -->
     <!-- query and resource -->
