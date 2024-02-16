@@ -31,10 +31,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Removing Entities Directly](./tutorial/removing_entities_directly.md)
 * Too Many Parameters
   * [Too Many Type Parameters For Queries](./tutorial/too_many_type_parameters_for_queries.md)
-  * Too Many Parameters For Systems
-    <!-- system_param.rs -->
-    <!-- query and resource -->
-    <!-- name, hp, with mp -->
+  * [Too Many Parameters For Systems](./tutorial/too_many_parameters_for_systems.md)
 * Faster Compile Time
   <!-- (remove in release) -->
 
