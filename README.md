@@ -32,8 +32,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Too Many Parameters
   * [Too Many Type Parameters For Queries](./tutorial/too_many_type_parameters_for_queries.md)
   * [Too Many Parameters For Systems](./tutorial/too_many_parameters_for_systems.md)
-* Faster Compile Time
-  <!-- (remove in release) -->
+* [Faster Compile Time](./tutorial/faster_compile_time.md)
 
 ## 2D Rendering
 
