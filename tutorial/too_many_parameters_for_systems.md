@@ -136,6 +136,6 @@ Name: Enemy 2, HP: 0
 
 ```
 
-:arrow_right:  Next: [Faster Compile Time](./faster_compile_time.md)
+:arrow_right:  Next: [Too Many Systems](./too_many_systems.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

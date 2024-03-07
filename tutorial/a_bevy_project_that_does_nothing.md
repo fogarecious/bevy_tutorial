@@ -14,6 +14,6 @@ fn main() {
 This program terminates immediately and outputs nothing.
 Yet, it is the template of all [Bevy](https://bevyengine.org/) apps that we can add functions and features to.
 
-:arrow_right:  Next: [They Are Functions In Bevy](./they_are_functions_in_bevy.md)
+:arrow_right:  Next: [Systems - They Are Functions In Bevy](./they_are_functions_in_bevy.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

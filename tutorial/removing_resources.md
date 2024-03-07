@@ -43,6 +43,6 @@ In the code above, we put `remove_my_resource` and `output_value` in different s
 This gives [Bevy](https://bevyengine.org/) enough time to update the internal data structure.
 If we put the functions in the same schedule, the update will not be reflected.
 
-:arrow_right:  Next: [They Are Like Tables](./they_are_like_tables.md)
+:arrow_right:  Next: [Entities And Components - They Are Like Tables](./they_are_like_tables.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
