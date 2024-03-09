@@ -18,6 +18,6 @@ Result:
 
 ![An App With A Window](./pic/an_app_with_a_window.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [The Default Scheduler For Windowed App](./the_default_scheduler_for_windowed_app.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

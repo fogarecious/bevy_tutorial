@@ -39,7 +39,7 @@ We try to keep each part of the tutorial as simple as possible.
 
 * Windows
   * [An App With A Window](./tutorial/an_app_with_a_window.md)
-  * The Default Scheduler For Windowed App
+  * [The Default Scheduler For Windowed App](./tutorial/the_default_scheduler_for_windowed_app.md)
   * Initializing A Different Window
     <!-- window_settings.rs -->
   * Changing The Window After Initialization
@@ -48,7 +48,7 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- low_power.rs -->
   * Closing The Window On Esc Pressed
 * Camera 2D
-  <!-- (origin, positive x y) -->
+  <!-- must have before drawing, (origin, positive x y) -->
 * The Background Color
   <!-- clear_color.rs -->
 * Images
