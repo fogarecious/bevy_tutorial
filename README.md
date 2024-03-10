@@ -40,8 +40,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Windows
   * [An App With A Window](./tutorial/an_app_with_a_window.md)
   * [The Default Scheduler For Windowed App](./tutorial/the_default_scheduler_for_windowed_app.md)
-  * Initializing A Different Window
-    <!-- window_settings.rs -->
+  * [Initializing A Different Window](./tutorial/initializing_a_different_window.md)
   * Changing The Window After Initialization
     <!-- window_settings.rs -->
   * Low-Power Windows

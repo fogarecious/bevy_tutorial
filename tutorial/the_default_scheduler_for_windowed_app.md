@@ -133,6 +133,6 @@ Last
 
 The rest of schedule labels repeats from [First](https://docs.rs/bevy/latest/bevy/app/struct.First.html) to [Last](https://docs.rs/bevy/latest/bevy/app/struct.Last.html), in which [FixedUpdate](https://docs.rs/bevy/latest/bevy/app/struct.FixedUpdate.html) may repeat several times.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Initializing A Different Window](./initializing_a_different_window.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
