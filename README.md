@@ -41,8 +41,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [An App With A Window](./tutorial/an_app_with_a_window.md)
   * [The Default Scheduler For Windowed App](./tutorial/the_default_scheduler_for_windowed_app.md)
   * [Initializing A Different Window](./tutorial/initializing_a_different_window.md)
-  * Changing The Window After Initialization
-    <!-- window_settings.rs -->
+  * [Changing The Window After Initialization](./tutorial/changing_the_window_after_initialization.md)
   * Low-Power Windows
     <!-- low_power.rs -->
   * Closing The Window On Esc Pressed
@@ -50,6 +49,7 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- must have before drawing, (origin, positive x y) -->
 * The Background Color
   <!-- clear_color.rs -->
+  <!-- commands.insert_resource or app.insert_resource -->
 * Images
   * Displaying Images
   * Obtaining Sizes Of Images

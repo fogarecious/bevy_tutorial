@@ -33,6 +33,6 @@ Result:
 
 ![Initializing A Different Window](./pic/initializing_a_different_window.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Changing The Window After Initialization](./changing_the_window_after_initialization.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
