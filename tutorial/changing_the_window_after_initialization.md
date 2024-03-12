@@ -39,6 +39,6 @@ Result:
 
 ![Changing The Window After Initialization](./pic/changing_the_window_after_initialization.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Low-Power Windows](./low_power_windows.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

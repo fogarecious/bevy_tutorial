@@ -42,8 +42,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [The Default Scheduler For Windowed App](./tutorial/the_default_scheduler_for_windowed_app.md)
   * [Initializing A Different Window](./tutorial/initializing_a_different_window.md)
   * [Changing The Window After Initialization](./tutorial/changing_the_window_after_initialization.md)
-  * Low-Power Windows
-    <!-- low_power.rs -->
+  * [Low-Power Windows](./tutorial/low_power_windows.md)
   * Closing The Window On Esc Pressed
 * Camera 2D
   <!-- must have before drawing, (origin, positive x y) -->
