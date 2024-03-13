@@ -35,6 +35,6 @@ When running in [WinitSettings::desktop_app()](https://docs.rs/bevy/latest/bevy/
 
 ![Low-Power Windows 2](./pic/low_power_windows_2.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Closing The Window On Esc Pressed](./closing_the_window_on_esc_pressed.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

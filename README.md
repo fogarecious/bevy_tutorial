@@ -43,7 +43,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Initializing A Different Window](./tutorial/initializing_a_different_window.md)
   * [Changing The Window After Initialization](./tutorial/changing_the_window_after_initialization.md)
   * [Low-Power Windows](./tutorial/low_power_windows.md)
-  * Closing The Window On Esc Pressed
+  * [Closing The Window On Esc Pressed](./tutorial/closing_the_window_on_esc_pressed.md)
 * Camera 2D
   <!-- must have before drawing, (origin, positive x y) -->
 * The Background Color
