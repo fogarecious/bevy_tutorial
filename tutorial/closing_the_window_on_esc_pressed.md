@@ -20,6 +20,6 @@ fn main() {
 
 The [close_on_esc](https://docs.rs/bevy/latest/bevy/window/fn.close_on_esc.html) is added to the schedule [Update](https://docs.rs/bevy/latest/bevy/app/struct.Update.html), so that our [App](https://docs.rs/bevy/latest/bevy/app/struct.App.html) checks if the Esc key is pressed whenever the app is updated.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Camera 2D](./camera_2d.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

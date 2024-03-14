@@ -44,13 +44,15 @@ We try to keep each part of the tutorial as simple as possible.
   * [Changing The Window After Initialization](./tutorial/changing_the_window_after_initialization.md)
   * [Low-Power Windows](./tutorial/low_power_windows.md)
   * [Closing The Window On Esc Pressed](./tutorial/closing_the_window_on_esc_pressed.md)
-* Camera 2D
-  <!-- must have before drawing, (origin, positive x y) -->
+* [Camera 2D](./tutorial/camera_2d.md)
 * The Background Color
   <!-- clear_color.rs -->
+  <!-- clear_color in Camera -->
   <!-- commands.insert_resource or app.insert_resource -->
 * Images
   * Displaying Images
+    <!-- game starts from images -->
+    <!-- origin, center, x y, positive, right up -->
   * Obtaining Sizes Of Images
   * Resizing Images
 * Transformation
@@ -106,6 +108,11 @@ We try to keep each part of the tutorial as simple as possible.
 <!-- ResMut<NextState<AppState>> -->
 <!-- NextState, next_state.set -->
 
+<!-- animation -->
+  <!-- sprite_sheet.rs -->
+
+<!-- * User Interfaces -->
+
 ## 3D Rendering
 
 * Camera 3D
@@ -120,8 +127,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Skipping The White Window
   <!-- window_settings.rs -->
 <!-- ? multiple windows/cameras, camera background, 2d+3d -->
-
-<!-- * User Interfaces -->
+<!-- draw on images -->
 
 <!-- * Debug -->
   <!-- * Using Local Variables In Systems
@@ -129,10 +135,7 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- gizmos -->
   <!-- 2d_gizmos.rs -->
 
-<!-- animation -->
-  <!-- sprite_sheet.rs -->
 <!-- audio -->
-<!-- plugin -->
 <!-- wasm, my practice, 26_wasm_test -->
 <!-- beyond bevy -->
 
