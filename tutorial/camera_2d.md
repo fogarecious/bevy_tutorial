@@ -26,6 +26,6 @@ The [Camera2dBundle](https://docs.rs/bevy/latest/bevy/core_pipeline/core_2d/stru
 The component decides where to draw 2-dimensional objects, such as on which window and on which rectangular area of the window.
 The default is to draw on the whole primary window.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [The Background Color](./the_background_color.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

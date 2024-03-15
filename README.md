@@ -45,10 +45,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Low-Power Windows](./tutorial/low_power_windows.md)
   * [Closing The Window On Esc Pressed](./tutorial/closing_the_window_on_esc_pressed.md)
 * [Camera 2D](./tutorial/camera_2d.md)
-* The Background Color
-  <!-- clear_color.rs -->
-  <!-- clear_color in Camera -->
-  <!-- commands.insert_resource or app.insert_resource -->
+* [The Background Color](./tutorial/the_background_color.md)
 * Images
   * Displaying Images
     <!-- game starts from images -->
