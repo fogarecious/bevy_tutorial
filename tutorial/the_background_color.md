@@ -65,6 +65,6 @@ fn setup(mut commands: Commands) {
 
 The code produces the same result.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Displaying Images](./displaying_images.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

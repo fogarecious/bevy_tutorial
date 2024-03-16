@@ -47,15 +47,15 @@ We try to keep each part of the tutorial as simple as possible.
 * [Camera 2D](./tutorial/camera_2d.md)
 * [The Background Color](./tutorial/the_background_color.md)
 * Images
-  * Displaying Images
-    <!-- game starts from images -->
-    <!-- origin, center, x y, positive, right up -->
+  * [Displaying Images](./tutorial/displaying_images.md)
   * Obtaining Sizes Of Images
   * Resizing Images
 * Transformation
   * Translation
+    <!-- x y, positive, right up -->
   * Rotation
   * Scale
+    <!-- relative to original size -->
   * Combining Multiple Transformation
 * Texts
   * Displaying Texts
