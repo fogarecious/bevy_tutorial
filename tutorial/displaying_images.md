@@ -60,6 +60,6 @@ Result:
 
 ![Displaying Images](./pic/displaying_images.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Obtaining Sizes Of Images](./obtaining_sizes_of_images.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

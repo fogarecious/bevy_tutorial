@@ -48,7 +48,7 @@ We try to keep each part of the tutorial as simple as possible.
 * [The Background Color](./tutorial/the_background_color.md)
 * Images
   * [Displaying Images](./tutorial/displaying_images.md)
-  * Obtaining Sizes Of Images
+  * [Obtaining Sizes Of Images](./tutorial/obtaining_sizes_of_images.md)
   * Resizing Images
 * Transformation
   * Translation
@@ -57,6 +57,9 @@ We try to keep each part of the tutorial as simple as possible.
   * Scale
     <!-- relative to original size -->
   * Combining Multiple Transformation
+    <!-- mul_transform -->
+    <!-- with_... -->
+    <!-- translate_around -->
 * Texts
   * Displaying Texts
   * Text Anchors
