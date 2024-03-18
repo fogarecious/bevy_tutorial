@@ -49,7 +49,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Images
   * [Displaying Images](./tutorial/displaying_images.md)
   * [Obtaining Sizes Of Images](./tutorial/obtaining_sizes_of_images.md)
-  * Resizing Images
+  * [Resizing Images](./tutorial/resizing_images.md)
 * Transformation
   * Translation
     <!-- x y, positive, right up -->
@@ -62,8 +62,11 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- translate_around -->
 * Texts
   * Displaying Texts
+    <!-- use default style -->
   * Text Anchors
+    <!-- right aligned, left top -->
   * Font And Styles
+    <!-- styles -->
   <!-- text2d.rs -->
 * Shapes
   * Circles

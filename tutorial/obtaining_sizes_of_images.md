@@ -78,6 +78,6 @@ Output:
 ... (repeat infinitely)
 ```
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Resizing Images](./resizing_images.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
