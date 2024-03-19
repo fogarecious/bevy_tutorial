@@ -51,15 +51,13 @@ We try to keep each part of the tutorial as simple as possible.
   * [Obtaining Sizes Of Images](./tutorial/obtaining_sizes_of_images.md)
   * [Resizing Images](./tutorial/resizing_images.md)
 * Transformation
-  * Translation
-    <!-- x y, positive, right up -->
+  * [Translation](./tutorial/translation.md)
   * Rotation
   * Scale
     <!-- relative to original size -->
   * Combining Multiple Transformation
-    <!-- mul_transform -->
     <!-- with_... -->
-    <!-- translate_around -->
+    <!-- mul_transform -->
 * Texts
   * Displaying Texts
     <!-- use default style -->
@@ -89,6 +87,7 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- cursor -->
 * Timers
   <!-- time, w/ w/o repeat, fixed_timestep.rs -->
+  <!-- simple image animation -->
 * Triggering An Event
   <!-- exit -->
 * Custom Events

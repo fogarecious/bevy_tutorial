@@ -71,6 +71,6 @@ Result:
 
 ![Resizing Images 2](./pic/resizing_images_2.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Translation](./translation.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
