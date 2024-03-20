@@ -3,7 +3,7 @@
 Most of developers use [Bevy](https://bevyengine.org/) for game development, which usually involves lots of images.
 
 To display an image, the image must be stored in the directory `assets` in the project root directory.
-Assume we have an image named `bevy_bird_dark.png` in the directory `assets`.
+Assume we have an image named [bevy_bird_dark.png](https://github.com/bevyengine/bevy/blob/main/assets/branding/bevy_bird_dark.png) in the directory `assets`.
 
 We use the resource [AssetServer](https://docs.rs/bevy/latest/bevy/asset/struct.AssetServer.html) to load images from the file system.
 The [load](https://docs.rs/bevy/latest/bevy/asset/struct.AssetServer.html#method.load) method of [AssetServer](https://docs.rs/bevy/latest/bevy/asset/struct.AssetServer.html) returns a [Handle](https://docs.rs/bevy/latest/bevy/asset/enum.Handle.html), which can be treated as a special type of pointers in [Bevy](https://bevyengine.org/).

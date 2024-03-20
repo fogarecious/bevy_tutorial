@@ -52,7 +52,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Resizing Images](./tutorial/resizing_images.md)
 * Transformation
   * [Translation](./tutorial/translation.md)
-  * Rotation
+  * [Rotation](./tutorial/rotation.md)
   * Scale
     <!-- relative to original size -->
   * Combining Multiple Transformation
@@ -62,9 +62,9 @@ We try to keep each part of the tutorial as simple as possible.
   * Displaying Texts
     <!-- use default style -->
   * Text Anchors
-    <!-- right aligned, left top -->
+    <!-- right aligned, left top (with window) -->
   * Font And Styles
-    <!-- styles -->
+    <!-- font links, styles -->
   <!-- text2d.rs -->
 * Shapes
   * Circles
