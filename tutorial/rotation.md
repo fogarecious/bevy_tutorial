@@ -57,6 +57,6 @@ Result:
 
 ![Rotation](./pic/rotation.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Scale](./scale.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
