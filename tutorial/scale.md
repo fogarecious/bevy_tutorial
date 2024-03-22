@@ -56,6 +56,6 @@ Result:
 
 ![Scale](./pic/scale.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Combining Multiple Transformation](./combining_multiple_transformation.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

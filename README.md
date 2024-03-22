@@ -54,16 +54,14 @@ We try to keep each part of the tutorial as simple as possible.
   * [Translation](./tutorial/translation.md)
   * [Rotation](./tutorial/rotation.md)
   * [Scale](./tutorial/scale.md)
-  * Combining Multiple Transformation
-    <!-- with_... -->
-    <!-- mul_transform -->
+  * [Combining Multiple Transformation](./tutorial/combining_multiple_transformation.md)
 * Texts
   * Displaying Texts
     <!-- use default style -->
-  * Text Anchors
-    <!-- transform, justify, right aligned, left top (with window) -->
-  * Font And Styles
-    <!-- font links, styles, color -->
+  * Font Styles
+    <!-- font links, size, color, from_sections -->
+  * Text Positions
+    <!-- anchor, transform, left top (with window) -->
   <!-- text2d.rs -->
 * Shapes
   * Circles
