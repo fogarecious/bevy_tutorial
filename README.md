@@ -4,6 +4,8 @@
 This tutorial serves as a quick start for [Bevy](https://bevyengine.org/).
 We try to keep each part of the tutorial as simple as possible.
 
+(Currently, this tutorial is for version 0.12.1.)
+
 ## Basic
 
 * [Setting Up](./tutorial/setting_up.md)
@@ -56,8 +58,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Scale](./tutorial/scale.md)
   * [Combining Multiple Transformation](./tutorial/combining_multiple_transformation.md)
 * Texts
-  * Displaying Texts
-    <!-- use default style -->
+  * [Displaying Texts](./tutorial/displaying_texts.md)
   * Font Styles
     <!-- font links, size, color, from_sections -->
   * Text Positions
@@ -71,7 +72,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Materials
   * Colors
   * Textures
-    <!-- diff shapes -->
+    <!-- diff shapes, text? -->
 
 ## Input
 

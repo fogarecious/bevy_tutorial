@@ -111,6 +111,6 @@ Result:
 The method [mul_transform](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#method.mul_transform) can also help us combining multiple transformation.
 For example, to combine three transformation `A`, `B` and `C`, we can write `A.mul_transform(B.mul_transform(C))`.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Displaying Texts](./displaying_texts.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
