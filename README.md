@@ -59,8 +59,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Combining Multiple Transformation](./tutorial/combining_multiple_transformation.md)
 * Texts
   * [Displaying Texts](./tutorial/displaying_texts.md)
-  * Font Styles
-    <!-- font links, size, color, from_sections -->
+  * [Font Styles](./tutorial/font_styles.md)
   * Text Positions
     <!-- anchor, transform, left top (with window) -->
   <!-- text2d.rs -->
@@ -68,6 +67,7 @@ We try to keep each part of the tutorial as simple as possible.
   * Circles
   * Quads
   * RegularPolygons
+  * Shapes With Transformation
   <!-- bevy::prelude::shape -->
 * Materials
   * Colors

@@ -49,6 +49,6 @@ Result:
 
 ![Displaying Texts](./pic/displaying_texts.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Font Styles](./font_styles.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
