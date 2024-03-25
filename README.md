@@ -60,9 +60,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Texts
   * [Displaying Texts](./tutorial/displaying_texts.md)
   * [Font Styles](./tutorial/font_styles.md)
-  * Text Positions
-    <!-- anchor, transform, left top (with window) -->
-  <!-- text2d.rs -->
+  * [Text Positions](./tutorial/text_positions.md)
 * Shapes
   * Circles
   * Quads
@@ -78,7 +76,12 @@ We try to keep each part of the tutorial as simple as possible.
 
 * Keyboards
   * Keyboard Input
+    <!-- Keyboard Input -->
+    <!-- pressed, move object -->
+    <!-- just_pressed, change color  -->
   * Keyboard Events
+    <!-- Keyboard Input Events -->
+    <!-- series of events in a batch -->
 * Mouses
   * Mouse Input
   * Mouse Events

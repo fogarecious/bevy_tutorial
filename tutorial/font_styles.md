@@ -121,6 +121,6 @@ Result:
 
 ![Font Styles 2](./pic/font_styles_2.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Text Positions](./text_positions.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
