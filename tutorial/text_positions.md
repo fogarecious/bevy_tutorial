@@ -115,6 +115,6 @@ Result:
 
 ![Text Positions 2](./pic/text_positions_2.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Circles](./circles.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
