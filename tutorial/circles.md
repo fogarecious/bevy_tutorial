@@ -55,6 +55,6 @@ Result:
 
 ![Circles](./pic/circles.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Quads](./quads.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

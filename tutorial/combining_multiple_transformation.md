@@ -19,7 +19,7 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
 }
 ```
 
-When all the fields are set, the result can be treated as performing the [rotation](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#structfield.rotation) and [scale](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#structfield.scale) first and then the [translation](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#structfield.translation).
+When all the fields are set, the result can be treated as performing [scale](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#structfield.scale), [rotation](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#structfield.rotation) and [translation](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#structfield.translation) in order.
 
 The full code is as follows:
 

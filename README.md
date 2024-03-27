@@ -63,7 +63,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Text Positions](./tutorial/text_positions.md)
 * Shapes
   * [Circles](./tutorial/circles.md)
-  * Quads
+  * [Quads](./tutorial/quads.md)
   * RegularPolygons
   * Shapes With Transformation
   <!-- bevy::prelude::shape -->
@@ -84,18 +84,19 @@ We try to keep each part of the tutorial as simple as possible.
   * Keyboard Events
     <!-- Keyboard Input Events -->
     <!-- series of events in a batch -->
+    <!-- show keycode as text (debug) -->
 * Mouses
   * Mouse Input
     <!-- Mouse Input -->
-    <!-- pressed, change color -->
     <!-- just_pressed, switch color  -->
     <!-- name released -->
     * Mouse Events
       <!-- Mouse Input Events -->
-      <!-- demo some, name all -->
+      <!-- demo some, MouseMotion, name all -->
   * Mouse Cursor
     <!-- Mouse Grab	 -->
     <!-- bevy::window::Cursor -->
+    <!-- change cursor -->
 * Timers
   <!-- time, w/ w/o repeat, fixed_timestep.rs -->
   <!-- simple image animation -->
