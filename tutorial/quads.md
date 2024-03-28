@@ -38,6 +38,6 @@ Result:
 
 ![Quads](./pic/quads.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Regular Polygons](./regular_polygons.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
