@@ -90,9 +90,9 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- Mouse Input -->
     <!-- just_pressed, switch color  -->
     <!-- name released -->
-    * Mouse Events
-      <!-- Mouse Input Events -->
-      <!-- demo some, MouseMotion, name all -->
+  * Mouse Events
+    <!-- Mouse Input Events -->
+    <!-- demo some, MouseMotion, name all -->
   * Mouse Cursor
     <!-- Mouse Grab	 -->
     <!-- bevy::window::Cursor -->
@@ -130,11 +130,23 @@ We try to keep each part of the tutorial as simple as possible.
 ## 3D Rendering
 
 * Camera 3D
-  <!-- camera position, look at -->
+  <!-- Camera3dBundle -->
+  * Camera Positions And Directions
+    <!-- camera position, look at, default position -->
 * Shapes
-  <!-- different shapes -->
+  * Cube
+  * Box
+  * UVSphere
+  * Icosphere
+  * Cylinder
+  * Capsule
+  * Torus
+  * Plane
+  <!-- bevy::prelude::shape -->
 * Transformation
-  <!-- parent/children, despawn recursively -->
+  * 3D Transformation
+  * Hierarchical Transformation
+    <!-- parent/children, despawn recursively -->
 * Lighting
 * Physically Based Rendering
 * Fog
