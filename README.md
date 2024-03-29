@@ -70,7 +70,6 @@ We try to keep each part of the tutorial as simple as possible.
 * Materials
   * Colors
   * Textures
-    <!-- diff shapes, text? -->
 
 ## Input
 
@@ -98,12 +97,18 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- bevy::window::Cursor -->
     <!-- change cursor -->
 * Timers
-  <!-- time, w/ w/o repeat, fixed_timestep.rs -->
-  <!-- simple image animation -->
+  * A Timer Running Once
+    <!-- time up and change color -->
+  * A Timer Running Repeatedly
+    <!-- move shape back and forth -->
+  <!-- Timers -->
+  <!-- tick, time.delta() -->
 * Triggering An Event
   <!-- exit -->
+  <!-- bevy::app::AppExit -->
 * Custom Events
-  <!-- event.rs -->
+  <!-- event.rs (Event) -->
+  <!-- EventWriter -->
 
 ## States
 
@@ -112,7 +117,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Using The State Machine
 * Changing States
 * Monitoring State Transition
-<!-- generic_system.rs -->
+<!-- generic_system.rs (Generic System) -->
 <!-- derive States -->
 <!-- enum AppState -->
 <!-- add_state::<AppState>() -->
@@ -121,8 +126,12 @@ We try to keep each part of the tutorial as simple as possible.
 <!-- run_if(in_state(AppState::MainMenu)) -->
 <!-- ResMut<NextState<AppState>> -->
 <!-- NextState, next_state.set -->
+<!-- or see Virtual time for key controlling systems -->
+<!-- ?see State -->
+<!-- ?see Run Conditions	 -->
 
 <!-- animation -->
+  <!-- use Time to move shapes, see Fixed Timestep -->
   <!-- sprite_sheet.rs -->
 
 <!-- * User Interfaces -->
