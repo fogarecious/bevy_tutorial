@@ -37,6 +37,6 @@ Result:
 
 ![Regular Polygons](./pic/regular_polygons.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Shapes With Transformation](./shapes_with_transformation.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

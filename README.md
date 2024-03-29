@@ -65,8 +65,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Circles](./tutorial/circles.md)
   * [Quads](./tutorial/quads.md)
   * [Regular Polygons](./tutorial/regular_polygons.md)
-  * Shapes With Transformation
-  <!-- bevy::prelude::shape -->
+  * [Shapes With Transformation](./tutorial/shapes_with_transformation.md)
 * Materials
   * Colors
   * Textures
