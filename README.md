@@ -67,7 +67,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Regular Polygons](./tutorial/regular_polygons.md)
   * [Shapes With Transformation](./tutorial/shapes_with_transformation.md)
 * Materials
-  * Colors
+  * [Colors](./tutorial/colors.md)
   * Textures
 
 ## Input

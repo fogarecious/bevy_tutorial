@@ -44,6 +44,6 @@ Result:
 
 ![Shapes With Transformation](./pic/shapes_with_transformation.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Colors](./colors.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
