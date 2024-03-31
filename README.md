@@ -68,7 +68,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Shapes With Transformation](./tutorial/shapes_with_transformation.md)
 * Materials
   * [Colors](./tutorial/colors.md)
-  * Textures
+  * [Textures](./tutorial/textures.md)
 
 ## Input
 

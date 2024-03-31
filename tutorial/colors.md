@@ -68,6 +68,6 @@ Result:
 We use [Circle](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Circle.html) in the example.
 The method applies to other shapes.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Textures](./textures.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
