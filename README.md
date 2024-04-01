@@ -73,12 +73,8 @@ We try to keep each part of the tutorial as simple as possible.
 ## Input
 
 * Keyboards
-  * Keyboard Input
-    <!-- Keyboard Input -->
-    <!-- Keyboard Modifiers	 -->
-    <!-- pressed, move object -->
-    <!-- just_pressed, switch color  -->
-    <!-- name modifier, released -->
+  * [Keyboard Input](./tutorial/keyboard_input.md)
+  * Keyboard Just Input
   * Keyboard Events
     <!-- Keyboard Input Events -->
     <!-- series of events in a batch -->
