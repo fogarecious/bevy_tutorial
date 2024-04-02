@@ -120,6 +120,6 @@ After the key `right` pressed for a while:
 
 The resource [Input](https://docs.rs/bevy/0.12.1/bevy/input/struct.Input.html)<[KeyCode](https://docs.rs/bevy/latest/bevy/input/keyboard/enum.KeyCode.html)> also monitors modifier keys such as [ShiftLeft](https://docs.rs/bevy/latest/bevy/input/keyboard/enum.KeyCode.html#variant.ShiftLeft), [ShiftRight](https://docs.rs/bevy/latest/bevy/input/keyboard/enum.KeyCode.html#variant.ShiftRight), [ControlLeft](https://docs.rs/bevy/latest/bevy/input/keyboard/enum.KeyCode.html#variant.ControlLeft), [ControlRight](https://docs.rs/bevy/latest/bevy/input/keyboard/enum.KeyCode.html#variant.ControlRight), etc.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Keyboard Just Input](./keyboard_just_input.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

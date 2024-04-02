@@ -74,7 +74,7 @@ We try to keep each part of the tutorial as simple as possible.
 
 * Keyboards
   * [Keyboard Input](./tutorial/keyboard_input.md)
-  * Keyboard Just Input
+  * [Keyboard Just Input](./tutorial/keyboard_just_input.md)
   * Keyboard Events
     <!-- Keyboard Input Events -->
     <!-- series of events in a batch -->
