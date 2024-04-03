@@ -75,10 +75,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Keyboards
   * [Keyboard Input](./tutorial/keyboard_input.md)
   * [Keyboard Just Input](./tutorial/keyboard_just_input.md)
-  * Keyboard Events
-    <!-- Keyboard Input Events -->
-    <!-- series of events in a batch -->
-    <!-- show keycode as text (debug) -->
+  * [Keyboard Events](./tutorial/keyboard_events.md)
 * Mouses
   * Mouse Input
     <!-- Mouse Input -->
@@ -86,11 +83,12 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- name released -->
   * Mouse Events
     <!-- Mouse Input Events -->
-    <!-- demo some, MouseMotion, name all -->
-  * Mouse Cursor
+    <!-- follow mouse, CursorMoved -->
+    <!-- name all -->
+  * Mouse Icon
     <!-- Mouse Grab	 -->
     <!-- bevy::window::Cursor -->
-    <!-- change cursor -->
+    <!-- a different cursor -->
 * Timers
   * A Timer Running Once
     <!-- time up and change color -->

@@ -153,6 +153,6 @@ The color change happens at the moment when the key is just pressed, and will no
 If we want to monitor the moment when a key is just released, we can use the method [just_released](https://docs.rs/bevy/0.12.1/bevy/input/struct.Input.html#method.just_released).
 The usage is the same as [just_pressed](https://docs.rs/bevy/0.12.1/bevy/input/struct.Input.html#method.just_pressed).
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Keyboard Events](./keyboard_events.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
