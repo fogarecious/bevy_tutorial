@@ -77,10 +77,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Keyboard Just Input](./tutorial/keyboard_just_input.md)
   * [Keyboard Events](./tutorial/keyboard_events.md)
 * Mouses
-  * Mouse Input
-    <!-- Mouse Input -->
-    <!-- just_pressed, switch color  -->
-    <!-- name released -->
+  * [Mouse Input](./tutorial/mouse_input.md)
   * Mouse Events
     <!-- Mouse Input Events -->
     <!-- follow mouse, CursorMoved -->
@@ -90,12 +87,19 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- bevy::window::Cursor -->
     <!-- a different cursor -->
 * Timers
-  * A Timer Running Once
-    <!-- time up and change color -->
-  * A Timer Running Repeatedly
+  * Engine Time
+    <!-- Res<Time>, elapsed -->
+    <!-- Duration, as_secs_f32 -->
     <!-- move shape back and forth -->
+  * A Timer Running Once
+    <!-- Timer, Timer::from_seconds(20.0, TimerMode::Once) -->
+    <!-- timer.tick(time.delta()).just_finished() -->
+    <!-- time up and scale -->
+  * A Timer Running Repeatedly
+    <!-- Timer, Timer::from_seconds(4.0, TimerMode::Repeating) -->
+    <!-- timer.tick(time.delta()).just_finished() -->
+    <!-- scale up/down -->
   <!-- Timers -->
-  <!-- tick, time.delta() -->
 * Triggering An Event
   <!-- exit -->
   <!-- bevy::app::AppExit -->

@@ -133,6 +133,6 @@ In the code, we print a string in the loop of `events.read()`.
 We can see (in the console) that the loop is not executed if there is no key touched.
 In some cases, the method of [EventReader](https://docs.rs/bevy/latest/bevy/ecs/event/struct.EventReader.html) is more efficient than the method of [Input](https://docs.rs/bevy/0.12.1/bevy/input/struct.Input.html).
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Mouse Input](./mouse_input.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
