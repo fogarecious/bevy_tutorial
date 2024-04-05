@@ -141,6 +141,6 @@ After the right mouse button just pressed at the first time:
 
 We can use the method [just_released](https://docs.rs/bevy/0.12.1/bevy/input/struct.Input.html#method.just_released) to monitor the released state of a mouse button.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Mouse Events](./mouse_events.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

@@ -78,10 +78,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Keyboard Events](./tutorial/keyboard_events.md)
 * Mouses
   * [Mouse Input](./tutorial/mouse_input.md)
-  * Mouse Events
-    <!-- Mouse Input Events -->
-    <!-- follow mouse, CursorMoved -->
-    <!-- name all -->
+  * [Mouse Events](./tutorial/mouse_events.md)
   * Mouse Icon
     <!-- Mouse Grab	 -->
     <!-- bevy::window::Cursor -->
