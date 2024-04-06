@@ -79,10 +79,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Mouses
   * [Mouse Input](./tutorial/mouse_input.md)
   * [Mouse Events](./tutorial/mouse_events.md)
-  * Mouse Icon
-    <!-- Mouse Grab	 -->
-    <!-- bevy::window::Cursor -->
-    <!-- a different cursor -->
+  * [Mouse Icon](./tutorial/mouse_icon.md)
 * Timers
   * Engine Time
     <!-- Res<Time>, elapsed -->
