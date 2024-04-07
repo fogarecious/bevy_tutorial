@@ -81,10 +81,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Mouse Events](./tutorial/mouse_events.md)
   * [Mouse Icon](./tutorial/mouse_icon.md)
 * Timers
-  * Engine Time
-    <!-- Res<Time>, elapsed -->
-    <!-- Duration, as_secs_f32 -->
-    <!-- move shape back and forth -->
+  * [Engine Time](./tutorial/engine_time.md)
   * A Timer Running Once
     <!-- Timer, Timer::from_seconds(20.0, TimerMode::Once) -->
     <!-- timer.tick(time.delta()).just_finished() -->
@@ -92,34 +89,45 @@ We try to keep each part of the tutorial as simple as possible.
   * A Timer Running Repeatedly
     <!-- Timer, Timer::from_seconds(4.0, TimerMode::Repeating) -->
     <!-- timer.tick(time.delta()).just_finished() -->
-    <!-- scale up/down -->
+    <!-- discrete rotation -->
   <!-- Timers -->
 * Triggering An Event
-  <!-- exit -->
   <!-- bevy::app::AppExit -->
+  <!-- system, mut my_events: EventWriter<AppExit> -->
+  <!-- my_events.send(AppExit); -->
+  <!-- Res<Time> for 3 seconds, exit -->
 * Custom Events
   <!-- event.rs (Event) -->
   <!-- EventWriter -->
+  <!-- #[derive(Event)] -->
+  <!-- App, add_event::<MyEvent>() -->
+  <!-- system, mut my_events: EventWriter<MyEvent> -->
+  <!-- my_events.send(MyEvent { ... }); -->
+  <!-- mut events: EventReader<MyEvent> -->
+  <!-- for my_event in events.read() -->
+  <!-- in 2~3 seconds, rotate polygon -->
 
 ## States
 
 * Turning On/Off A System
+  <!-- Run Conditions	 -->
   <!-- run_if -->
 * Using The State Machine
 * Changing States
 * Monitoring State Transition
 <!-- generic_system.rs (Generic System) -->
+<!-- or State -->
 <!-- derive States -->
-<!-- enum AppState -->
-<!-- add_state::<AppState>() -->
+<!-- #[derive(Debug, Default, Clone, Copy, Eq, PartialEq, Hash, States)] -->
+<!-- enum AppState, derive -->
+<!-- #[default] in enum AppState -->
+<!-- App, add_state::<AppState>() -->
 <!-- add_systems(OnExit(AppState::MainMenu), ...) -->
 <!-- OnEnter, OnExit, OnTransition -->
 <!-- run_if(in_state(AppState::MainMenu)) -->
 <!-- ResMut<NextState<AppState>> -->
 <!-- NextState, next_state.set -->
 <!-- or see Virtual time for key controlling systems -->
-<!-- ?see State -->
-<!-- ?see Run Conditions	 -->
 
 <!-- animation -->
   <!-- use Time to move shapes, see Fixed Timestep -->
