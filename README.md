@@ -95,7 +95,7 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- bevy::app::AppExit -->
   <!-- system, mut my_events: EventWriter<AppExit> -->
   <!-- my_events.send(AppExit); -->
-  <!-- Res<Time> for 3 seconds, exit -->
+  <!-- press space, exit -->
 * Custom Events
   <!-- event.rs (Event) -->
   <!-- EventWriter -->
@@ -109,29 +109,39 @@ We try to keep each part of the tutorial as simple as possible.
 
 ## States
 
+<!-- bevy::ecs::schedule::common_conditions -->
 * Turning On/Off A System
   <!-- Run Conditions	 -->
   <!-- run_if -->
+  <!-- system that returns bool -->
+  <!-- not -->
+* Turning On/Off A System By An Event
+  <!-- on_event -->
+  <!-- key controls a system that moves a circle -->
+* Running A System Only Once
+  <!-- run_once -->
 * Using The State Machine
+  <!-- generic_system.rs (Generic System) -->
+  <!-- or State -->
+  <!-- or see Virtual time for key controlling systems -->
+  <!-- derive States -->
+  <!-- #[derive(Debug, Default, Clone, Copy, Eq, PartialEq, Hash, States)] -->
+  <!-- enum AppState, derive -->
+  <!-- App, add_state::<AppState>() -->
+  <!-- run_if(in_state(AppState::MainMenu)) -->
 * Changing States
+  <!-- #[default] in enum AppState -->
+  <!-- ResMut<NextState<AppState>> -->
+  <!-- NextState, next_state.set -->
 * Monitoring State Transition
-<!-- generic_system.rs (Generic System) -->
-<!-- or State -->
-<!-- derive States -->
-<!-- #[derive(Debug, Default, Clone, Copy, Eq, PartialEq, Hash, States)] -->
-<!-- enum AppState, derive -->
-<!-- #[default] in enum AppState -->
-<!-- App, add_state::<AppState>() -->
-<!-- add_systems(OnExit(AppState::MainMenu), ...) -->
-<!-- OnEnter, OnExit, OnTransition -->
-<!-- run_if(in_state(AppState::MainMenu)) -->
-<!-- ResMut<NextState<AppState>> -->
-<!-- NextState, next_state.set -->
-<!-- or see Virtual time for key controlling systems -->
+  <!-- add_systems(OnExit(AppState::MainMenu), ...) -->
+  <!-- OnEnter, OnExit, OnTransition -->
 
 <!-- animation -->
   <!-- use Time to move shapes, see Fixed Timestep -->
   <!-- sprite_sheet.rs -->
+<!-- Cubic Curve -->
+<!-- Animated Transform -->
 
 <!-- * User Interfaces -->
 
