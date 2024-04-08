@@ -23,6 +23,6 @@ Result:
 
 We can use the method [elapsed()](https://docs.rs/bevy/latest/bevy/time/struct.Time.html#method.elapsed) to customize the unit of the elapsed time.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [A Timer Running Once](./a_timer_running_once.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

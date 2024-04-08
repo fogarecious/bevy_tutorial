@@ -82,10 +82,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Mouse Icon](./tutorial/mouse_icon.md)
 * Timers
   * [Engine Time](./tutorial/engine_time.md)
-  * A Timer Running Once
-    <!-- Timer, Timer::from_seconds(20.0, TimerMode::Once) -->
-    <!-- timer.tick(time.delta()).just_finished() -->
-    <!-- time up and scale -->
+  * [A Timer Running Once](./tutorial/a_timer_running_once.md)
   * A Timer Running Repeatedly
     <!-- Timer, Timer::from_seconds(4.0, TimerMode::Repeating) -->
     <!-- timer.tick(time.delta()).just_finished() -->
