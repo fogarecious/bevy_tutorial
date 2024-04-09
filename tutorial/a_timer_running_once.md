@@ -103,6 +103,6 @@ After three seconds:
 
 ![A Timer Running Once 2](./pic/a_timer_running_once_2.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [A Timer Running Repeatedly](./a_timer_running_repeatedly.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

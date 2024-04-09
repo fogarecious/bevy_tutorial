@@ -83,11 +83,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Timers
   * [Engine Time](./tutorial/engine_time.md)
   * [A Timer Running Once](./tutorial/a_timer_running_once.md)
-  * A Timer Running Repeatedly
-    <!-- Timer, Timer::from_seconds(4.0, TimerMode::Repeating) -->
-    <!-- timer.tick(time.delta()).just_finished() -->
-    <!-- discrete rotation -->
-  <!-- Timers -->
+  * [A Timer Running Repeatedly](./tutorial/a_timer_running_repeatedly.md)
 * Triggering An Event
   <!-- bevy::app::AppExit -->
   <!-- system, mut my_events: EventWriter<AppExit> -->
@@ -102,21 +98,22 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- my_events.send(MyEvent { ... }); -->
   <!-- mut events: EventReader<MyEvent> -->
   <!-- for my_event in events.read() -->
-  <!-- in 2~3 seconds, rotate polygon -->
+  <!-- key, send event, receive event -->
 
 ## States
 
 <!-- bevy::ecs::schedule::common_conditions -->
+* Running A System Only Once
+  <!-- run_once -->
+  <!-- print -->
+* Running A System By An Event
+  <!-- on_event -->
+  <!-- key controls a system that prints -->
 * Turning On/Off A System
   <!-- Run Conditions	 -->
   <!-- run_if -->
   <!-- system that returns bool -->
   <!-- not -->
-* Turning On/Off A System By An Event
-  <!-- on_event -->
-  <!-- key controls a system that moves a circle -->
-* Running A System Only Once
-  <!-- run_once -->
 * Using The State Machine
   <!-- generic_system.rs (Generic System) -->
   <!-- or State -->
@@ -126,18 +123,26 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- enum AppState, derive -->
   <!-- App, add_state::<AppState>() -->
   <!-- run_if(in_state(AppState::MainMenu)) -->
+  <!-- single state, print -->
 * Changing States
   <!-- #[default] in enum AppState -->
   <!-- ResMut<NextState<AppState>> -->
   <!-- NextState, next_state.set -->
+  <!-- two states, two positions -->
 * Monitoring State Transition
   <!-- add_systems(OnExit(AppState::MainMenu), ...) -->
-  <!-- OnEnter, OnExit, OnTransition -->
+  <!-- OnEnter, OnExit -->
+  <!-- state A, circle, state B, rectangle -->
+  <!-- OnTransition -->
 
 <!-- animation -->
   <!-- use Time to move shapes, see Fixed Timestep -->
   <!-- sprite_sheet.rs -->
 <!-- Cubic Curve -->
+  <!-- bevy::math::cubic_splines::CubicCurve -->
+  <!-- CubicBezier::new(points).to_curve(), to CubicCurve -->
+  <!-- t = 0 ~ 1 -->
+  <!-- cubic_curve.0.position(t) -->
 <!-- Animated Transform -->
 
 <!-- * User Interfaces -->
