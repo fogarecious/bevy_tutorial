@@ -92,6 +92,6 @@ After 1 second:
 
 ![A Timer Running Repeatedly 3](./pic/a_timer_running_repeatedly_3.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Triggering An Event](./triggering_an_event.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

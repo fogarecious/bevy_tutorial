@@ -84,11 +84,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Engine Time](./tutorial/engine_time.md)
   * [A Timer Running Once](./tutorial/a_timer_running_once.md)
   * [A Timer Running Repeatedly](./tutorial/a_timer_running_repeatedly.md)
-* Triggering An Event
-  <!-- bevy::app::AppExit -->
-  <!-- system, mut my_events: EventWriter<AppExit> -->
-  <!-- my_events.send(AppExit); -->
-  <!-- press space, exit -->
+* [Triggering An Event](./tutorial/triggering_an_event.md)
 * Custom Events
   <!-- event.rs (Event) -->
   <!-- EventWriter -->
@@ -103,17 +99,14 @@ We try to keep each part of the tutorial as simple as possible.
 ## States
 
 <!-- bevy::ecs::schedule::common_conditions -->
-* Running A System Only Once
-  <!-- run_once -->
-  <!-- print -->
-* Running A System By An Event
-  <!-- on_event -->
-  <!-- key controls a system that prints -->
 * Turning On/Off A System
   <!-- Run Conditions	 -->
   <!-- run_if -->
   <!-- system that returns bool -->
   <!-- not -->
+* Running A System By An Event
+  <!-- on_event -->
+  <!-- key controls a system that prints -->
 * Using The State Machine
   <!-- generic_system.rs (Generic System) -->
   <!-- or State -->
@@ -134,6 +127,9 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- OnEnter, OnExit -->
   <!-- state A, circle, state B, rectangle -->
   <!-- OnTransition -->
+* Running A System Only Once
+  <!-- run_once -->
+  <!-- print -->
 
 <!-- animation -->
   <!-- use Time to move shapes, see Fixed Timestep -->
