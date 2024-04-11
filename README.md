@@ -85,16 +85,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [A Timer Running Once](./tutorial/a_timer_running_once.md)
   * [A Timer Running Repeatedly](./tutorial/a_timer_running_repeatedly.md)
 * [Triggering An Event](./tutorial/triggering_an_event.md)
-* Custom Events
-  <!-- event.rs (Event) -->
-  <!-- EventWriter -->
-  <!-- #[derive(Event)] -->
-  <!-- App, add_event::<MyEvent>() -->
-  <!-- system, mut my_events: EventWriter<MyEvent> -->
-  <!-- my_events.send(MyEvent { ... }); -->
-  <!-- mut events: EventReader<MyEvent> -->
-  <!-- for my_event in events.read() -->
-  <!-- key, send event, receive event -->
+* [Custom Events](./tutorial/custom_events.md)
 
 ## States
 

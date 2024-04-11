@@ -47,6 +47,6 @@ By running the program, we can see that there is a window at the beginning.
 The window is closed when we press the key `space`.
 And also the app exits when the window is closed.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Custom Events](./custom_events.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
