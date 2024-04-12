@@ -89,12 +89,7 @@ We try to keep each part of the tutorial as simple as possible.
 
 ## States
 
-<!-- bevy::ecs::schedule::common_conditions -->
-* Turning On/Off A System
-  <!-- Run Conditions	 -->
-  <!-- run_if -->
-  <!-- system that returns bool -->
-  <!-- not -->
+* [Turning On/Off A System](./tutorial/turning_on_off_a_system.md)
 * Running A System By An Event
   <!-- on_event -->
   <!-- key controls a system that prints -->

@@ -88,6 +88,6 @@ When we press the key `space`, we get the output:
 99
 ```
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Turning On/Off A System](./turning_on_off_a_system.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
