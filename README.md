@@ -69,6 +69,28 @@ We try to keep each part of the tutorial as simple as possible.
 * Materials
   * [Colors](./tutorial/colors.md)
   * [Textures](./tutorial/textures.md)
+* Animated Transformation
+  <!-- setup -->
+  <!-- mut animations: ResMut<Assets<AnimationClip>> -->
+  <!-- let planet = Name::new("planet"); -->
+  <!-- let mut animation = AnimationClip::default(); -->
+  <!-- animation.add_curve_to_path(
+    EntityPath {
+      parts: vec![planet.clone()],
+    },
+    VariableCurve {
+      keyframe_timestamps: vec![0.0, 1.0, 2.0],
+      keyframes: Keyframes::Translation(vec![
+        Vec3::new(1.0, 0.0, 1.0),
+        Vec3::new(-1.0, 0.0, 1.0),
+        Vec3::new(1.0, 0.0, 1.0),
+      ]),
+    },
+  ); -->
+  <!-- keyframes: Keyframes::Rotation(vec![...]), -->
+  <!-- keyframes: Keyframes::Scale(vec![...]), -->
+  <!-- let mut player = AnimationPlayer::default(); -->
+  <!-- player.play(animations.add(animation)).repeat(); -->
 
 ## Input
 
@@ -82,6 +104,17 @@ We try to keep each part of the tutorial as simple as possible.
   * [Mouse Icon](./tutorial/mouse_icon.md)
 * Timers
   * [Engine Time](./tutorial/engine_time.md)
+  * Easing
+    <!-- Cubic Curve -->
+    <!-- bevy::math::cubic_splines::CubicCurve -->
+    <!-- CubicBezier::new(points).to_curve(), to CubicCurve -->
+    <!-- put CubicCurve cc in resource -->
+    <!-- t = 0 ~ 1, use Res<Time> to control t -->
+    <!-- cc.position(t) -->
+    <!-- four points? -->
+    <!-- or -->
+    <!-- cs = CubicSegment::new_bezier((0.25, 0.1), (0.25, 1.0)) -->
+    <!-- cs.ease(t) -->
   * [A Timer Running Once](./tutorial/a_timer_running_once.md)
   * [A Timer Running Repeatedly](./tutorial/a_timer_running_repeatedly.md)
 * [Triggering An Event](./tutorial/triggering_an_event.md)
@@ -118,14 +151,7 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- print -->
 
 <!-- animation -->
-  <!-- use Time to move shapes, see Fixed Timestep -->
-  <!-- sprite_sheet.rs -->
-<!-- Cubic Curve -->
-  <!-- bevy::math::cubic_splines::CubicCurve -->
-  <!-- CubicBezier::new(points).to_curve(), to CubicCurve -->
-  <!-- t = 0 ~ 1 -->
-  <!-- cubic_curve.0.position(t) -->
-<!-- Animated Transform -->
+<!-- sprite_sheet.rs -->
 
 <!-- * User Interfaces -->
 
