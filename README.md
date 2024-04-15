@@ -123,9 +123,7 @@ We try to keep each part of the tutorial as simple as possible.
 ## States
 
 * [Turning On/Off A System](./tutorial/turning_on_off_a_system.md)
-* Running A System By An Event
-  <!-- on_event -->
-  <!-- key controls a system that prints -->
+* [Running A System By An Event](./tutorial/running_a_system_by_an_event.md)
 * Using The State Machine
   <!-- generic_system.rs (Generic System) -->
   <!-- or State -->

@@ -70,6 +70,6 @@ A
 In the output, only `A` is printed, and `B` is not printed.
 This means `print_a` is executed, but `print_b` is not.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Running A System By An Event](./running_a_system_by_an_event.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
