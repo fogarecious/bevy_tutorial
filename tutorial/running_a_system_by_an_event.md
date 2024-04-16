@@ -36,6 +36,6 @@ When a key is pressed, the string `A key event occurred.` is appended to the out
 
 In addition to [KeyboardInput](https://docs.rs/bevy/latest/bevy/input/keyboard/struct.KeyboardInput.html), we can use any other events including custom events.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Using The State Machine](./using_the_state_machine.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
