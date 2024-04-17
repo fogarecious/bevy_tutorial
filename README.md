@@ -125,11 +125,7 @@ We try to keep each part of the tutorial as simple as possible.
 * [Turning On/Off A System](./tutorial/turning_on_off_a_system.md)
 * [Running A System By An Event](./tutorial/running_a_system_by_an_event.md)
 * [Using The State Machine](./tutorial/using_the_state_machine.md)
-* Changing States
-  <!-- #[default] in enum AppState -->
-  <!-- ResMut<NextState<AppState>> -->
-  <!-- NextState, next_state.set -->
-  <!-- two states, two positions -->
+* [Changing States](./tutorial/changing_states.md)
 * Monitoring State Transition
   <!-- add_systems(OnExit(AppState::MainMenu), ...) -->
   <!-- OnEnter, OnExit -->
