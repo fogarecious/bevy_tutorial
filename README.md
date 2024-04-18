@@ -135,17 +135,13 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- run_once -->
   <!-- print -->
 
-<!-- animation -->
-<!-- sprite_sheet.rs -->
-
-<!-- * User Interfaces -->
-
 ## 3D Rendering
 
 * Camera 3D
   <!-- Camera3dBundle -->
   * Camera Positions And Directions
     <!-- camera position, look at, default position -->
+  <!-- Orthographic View -->
 * Shapes
   * Cube
   * Box
@@ -161,12 +157,38 @@ We try to keep each part of the tutorial as simple as possible.
   * Hierarchical Transformation
     <!-- parent/children, despawn recursively -->
 * Lighting
+  * Ambient Light
+  * Directional Light
+  * Point Light
+    <!-- Spherical Area Lights -->
+  * Spot Light
+    <!-- Spotlight -->
+  * Shadow
 * Physically Based Rendering
+  <!-- base_color -->
+  <!-- metallic -->
+  <!-- perceptual_roughness -->
+  <!-- reflectance -->
+  <!-- diffuse_transmission -->
+  <!-- specular_transmission -->
+  <!-- thickness -->
+  <!-- ior -->
+  <!-- attenuation_distance -->
+  <!-- attenuation_color -->
+<!-- Texture -->
 * Fog
+  <!-- Atmospheric Fog -->
+  <!-- Fog -->
+  <!-- bevy::pbr::FogSettings -->
 * Skipping The White Window
   <!-- window_settings.rs -->
 <!-- ? multiple windows/cameras, camera background, 2d+3d -->
 <!-- draw on images -->
+
+<!-- animation -->
+<!-- sprite_sheet.rs -->
+
+<!-- * User Interfaces -->
 
 <!-- * Debug -->
   <!-- * Using Local Variables In Systems
