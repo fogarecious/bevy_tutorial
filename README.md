@@ -126,11 +126,7 @@ We try to keep each part of the tutorial as simple as possible.
 * [Running A System By An Event](./tutorial/running_a_system_by_an_event.md)
 * [Using The State Machine](./tutorial/using_the_state_machine.md)
 * [Changing States](./tutorial/changing_states.md)
-* Monitoring State Transition
-  <!-- add_systems(OnExit(AppState::MainMenu), ...) -->
-  <!-- OnEnter, OnExit -->
-  <!-- state A, circle, state B, rectangle -->
-  <!-- OnTransition -->
+* [Monitoring State Transition](./tutorial/monitoring_state_transition.md)
 * Running A System Only Once
   <!-- run_once -->
   <!-- print -->

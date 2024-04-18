@@ -127,6 +127,6 @@ When the key `right` is pressed:
 
 ![Changing States 2](./pic/changing_states_2.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Monitoring State Transition](./monitoring_state_transition.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
