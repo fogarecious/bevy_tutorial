@@ -133,6 +133,6 @@ At the start of running the app, the circle is shown even if we have not pressed
 In addition to the two schedule labels, we can use [OnTransition](https://docs.rs/bevy/latest/bevy/ecs/schedule/struct.OnTransition.html) to specify the exiting state and the entering state.
 The corresponding system will only be executed on the specified state transition.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Running A System Only Once](./running_a_system_only_once.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

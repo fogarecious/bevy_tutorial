@@ -127,9 +127,7 @@ We try to keep each part of the tutorial as simple as possible.
 * [Using The State Machine](./tutorial/using_the_state_machine.md)
 * [Changing States](./tutorial/changing_states.md)
 * [Monitoring State Transition](./tutorial/monitoring_state_transition.md)
-* Running A System Only Once
-  <!-- run_once -->
-  <!-- print -->
+* [Running A System Only Once](./tutorial/running_a_system_only_once.md)
 
 ## 3D Rendering
 
