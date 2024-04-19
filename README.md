@@ -137,9 +137,11 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- Camera3dBundle -->
   * Camera Positions And Directions
     <!-- camera position, look at, default position -->
-  <!-- Orthographic View -->
+  * Orthographic View
+    <!-- Orthographic View -->
 * Shapes
   * Cube
+    <!-- bevy::prelude::shape -->
   * Box
   * UVSphere
   * Icosphere
@@ -147,7 +149,6 @@ We try to keep each part of the tutorial as simple as possible.
   * Capsule
   * Torus
   * Plane
-  <!-- bevy::prelude::shape -->
 * Transformation
   * 3D Transformation
   * Hierarchical Transformation
