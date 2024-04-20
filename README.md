@@ -69,28 +69,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Materials
   * [Colors](./tutorial/colors.md)
   * [Textures](./tutorial/textures.md)
-* Animated Transformation
-  <!-- setup -->
-  <!-- mut animations: ResMut<Assets<AnimationClip>> -->
-  <!-- let planet = Name::new("planet"); -->
-  <!-- let mut animation = AnimationClip::default(); -->
-  <!-- animation.add_curve_to_path(
-    EntityPath {
-      parts: vec![planet.clone()],
-    },
-    VariableCurve {
-      keyframe_timestamps: vec![0.0, 1.0, 2.0],
-      keyframes: Keyframes::Translation(vec![
-        Vec3::new(1.0, 0.0, 1.0),
-        Vec3::new(-1.0, 0.0, 1.0),
-        Vec3::new(1.0, 0.0, 1.0),
-      ]),
-    },
-  ); -->
-  <!-- keyframes: Keyframes::Rotation(vec![...]), -->
-  <!-- keyframes: Keyframes::Scale(vec![...]), -->
-  <!-- let mut player = AnimationPlayer::default(); -->
-  <!-- player.play(animations.add(animation)).repeat(); -->
+* [Animated Transformation](./tutorial/animated_transformation.md)
 
 ## Input
 

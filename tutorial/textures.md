@@ -72,6 +72,6 @@ Result:
 
 We can see that the image is mapped automatically onto the shape.
 
-:arrow_right:  Next: [Keyboard Input](./keyboard_input.md)
+:arrow_right:  Next: [Animated Transformation](./animated_transformation.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
