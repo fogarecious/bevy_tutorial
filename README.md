@@ -83,19 +83,9 @@ We try to keep each part of the tutorial as simple as possible.
   * [Mouse Icon](./tutorial/mouse_icon.md)
 * Timers
   * [Engine Time](./tutorial/engine_time.md)
-  * Easing
-    <!-- Cubic Curve -->
-    <!-- bevy::math::cubic_splines::CubicCurve -->
-    <!-- CubicBezier::new(points).to_curve(), to CubicCurve -->
-    <!-- put CubicCurve cc in resource -->
-    <!-- t = 0 ~ 1, use Res<Time> to control t -->
-    <!-- cc.position(t) -->
-    <!-- four points? -->
-    <!-- or -->
-    <!-- cs = CubicSegment::new_bezier((0.25, 0.1), (0.25, 1.0)) -->
-    <!-- cs.ease(t) -->
   * [A Timer Running Once](./tutorial/a_timer_running_once.md)
   * [A Timer Running Repeatedly](./tutorial/a_timer_running_repeatedly.md)
+  * [Easing](./tutorial/easing.md)
 * [Triggering An Event](./tutorial/triggering_an_event.md)
 * [Custom Events](./tutorial/custom_events.md)
 
