@@ -28,6 +28,6 @@ Output:
 A system that runs once.
 ```
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Camera 3D](./camera_3d.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

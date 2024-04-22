@@ -100,8 +100,7 @@ We try to keep each part of the tutorial as simple as possible.
 
 ## 3D Rendering
 
-* Camera 3D
-  <!-- Camera3dBundle -->
+* [Camera 3D](./tutorial/camera_3d.md)
   * Camera Positions And Directions
     <!-- camera position, look at, default position -->
   * Orthographic View
