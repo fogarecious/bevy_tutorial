@@ -101,8 +101,7 @@ We try to keep each part of the tutorial as simple as possible.
 ## 3D Rendering
 
 * [Camera 3D](./tutorial/camera_3d.md)
-  * Camera Positions And Directions
-    <!-- camera position, look at, default position -->
+  * [Camera Positions And Directions](./tutorial/camera_positions_and_directions.md)
   * Orthographic View
     <!-- Orthographic View -->
 * Shapes

@@ -28,6 +28,6 @@ Positive x points to right.
 Positive y points to up.
 And positive z points out of the screen, toward us.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Camera Positions And Directions](./camera_positions_and_directions.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
