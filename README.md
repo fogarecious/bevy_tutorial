@@ -102,8 +102,7 @@ We try to keep each part of the tutorial as simple as possible.
 
 * [Camera 3D](./tutorial/camera_3d.md)
   * [Camera Positions And Directions](./tutorial/camera_positions_and_directions.md)
-  * Orthographic View
-    <!-- Orthographic View -->
+  * [Orthographic View](./tutorial/orthographic_view.md)
 * Shapes
   * Cube
     <!-- bevy::prelude::shape -->
@@ -116,6 +115,8 @@ We try to keep each part of the tutorial as simple as possible.
   * Plane
 * Transformation
   * 3D Transformation
+    <!-- sphere, scale ellipse, rotate, translate -->
+    <!-- with plane -->
   * Hierarchical Transformation
     <!-- parent/children, despawn recursively -->
 * Lighting

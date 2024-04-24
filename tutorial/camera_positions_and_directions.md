@@ -76,6 +76,6 @@ Result:
 
 ![Camera Positions And Directions](./pic/camera_positions_and_directions.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Orthographic View](./orthographic_view.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
