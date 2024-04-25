@@ -104,8 +104,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Camera Positions And Directions](./tutorial/camera_positions_and_directions.md)
   * [Orthographic View](./tutorial/orthographic_view.md)
 * Shapes
-  * Cube
-    <!-- bevy::prelude::shape -->
+  * [Cube](./tutorial/cube.md)
   * Box
   * UVSphere
   * Icosphere
@@ -118,14 +117,19 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- sphere, scale ellipse, rotate, translate -->
     <!-- with plane -->
   * Hierarchical Transformation
+    <!-- Parenting -->
     <!-- parent/children, despawn recursively -->
+    <!-- .with_children(|parent| { -->
 * Lighting
+  <!-- Lighting -->
   * Ambient Light
   * Directional Light
   * Point Light
     <!-- Spherical Area Lights -->
   * Spot Light
     <!-- Spotlight -->
+  * Light Colors
+  * Light Intensity
   * Shadow
 * Physically Based Rendering
   <!-- base_color -->

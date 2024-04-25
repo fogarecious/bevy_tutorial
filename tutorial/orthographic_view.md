@@ -83,6 +83,6 @@ If we use the default [ScalingMode](https://docs.rs/bevy/latest/bevy/render/came
 
 The cube becomes a small white point at the center of the window.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Cube](./cube.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
