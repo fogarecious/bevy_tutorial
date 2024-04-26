@@ -74,6 +74,6 @@ Basically, we make the cube visible by the camera.
 
 ![Cube](./pic/cube.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Box](./box.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

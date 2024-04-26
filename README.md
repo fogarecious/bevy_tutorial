@@ -105,7 +105,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Orthographic View](./tutorial/orthographic_view.md)
 * Shapes
   * [Cube](./tutorial/cube.md)
-  * Box
+  * [Box](./tutorial/box.md)
   * UVSphere
   * Icosphere
   * Cylinder
