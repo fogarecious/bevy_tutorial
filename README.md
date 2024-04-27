@@ -106,7 +106,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Shapes
   * [Cube](./tutorial/cube.md)
   * [Box](./tutorial/box.md)
-  * UVSphere
+  * [UVSphere](./tutorial/uvsphere.md)
   * Icosphere
   * Cylinder
   * Capsule
@@ -130,6 +130,7 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- Spotlight -->
   * Light Colors
   * Light Intensity
+    <!-- where to find for different lights, compare -->
   * Shadow
 * Physically Based Rendering
   <!-- base_color -->

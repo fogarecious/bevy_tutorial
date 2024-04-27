@@ -1,19 +1,27 @@
-# Box
+# UVSphere
 
-A [Box](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Box.html) is a cube with different lengths at each axis.
+A sphere is a ball-shape object.
+
+One of the spheres in [Bevy](https://bevyengine.org/) is [UVSphere](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.UVSphere.html).
 
 ```rust
 commands.spawn(PbrBundle {
-    mesh: meshes.add(Box::new(2., 1., 0.5).into()).into(),
+    mesh: meshes
+        .add(
+            UVSphere {
+                radius: 0.5,
+                ..default()
+            }
+            .into(),
+        )
+        .into(),
     ..default()
 });
 ```
 
-We use the function [new](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Box.html#method.new) of [Box](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Box.html) to construct a box.
-The function takes three parameters.
-They are the lengths of the box for x, y and z axis.
+We can set the [radius](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.UVSphere.html#structfield.radius) of the [UVSphere](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.UVSphere.html).
 
-We set our camera position to `(2, 1, 3)` and make it looking at the origin.
+We set our camera position to `(0, 0, 3)` and make it looking at the origin.
 
 The full code is as follows:
 
@@ -25,7 +33,7 @@ use bevy::{
     ecs::system::{Commands, ResMut},
     math::Vec3,
     pbr::{PbrBundle, PointLightBundle, StandardMaterial},
-    render::mesh::{shape::Box, Mesh},
+    render::mesh::{shape::UVSphere, Mesh},
     transform::components::Transform,
     utils::default,
     DefaultPlugins,
@@ -44,12 +52,20 @@ fn setup(
     mut materials: ResMut<Assets<StandardMaterial>>,
 ) {
     commands.spawn(Camera3dBundle {
-        transform: Transform::from_xyz(2., 1., 3.).looking_at(Vec3::ZERO, Vec3::Y),
+        transform: Transform::from_xyz(0., 0., 3.).looking_at(Vec3::ZERO, Vec3::Y),
         ..default()
     });
 
     commands.spawn(PbrBundle {
-        mesh: meshes.add(Box::new(2., 1., 0.5).into()).into(),
+        mesh: meshes
+            .add(
+                UVSphere {
+                    radius: 0.5,
+                    ..default()
+                }
+                .into(),
+            )
+            .into(),
         material: materials.add(StandardMaterial::default()).into(),
         ..default()
     });
@@ -63,8 +79,8 @@ fn setup(
 
 Result:
 
-![Box](./pic/box.png)
+![UVSphere](./pic/uvsphere.png)
 
-:arrow_right:  Next: [UVSphere](./uvsphere.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
