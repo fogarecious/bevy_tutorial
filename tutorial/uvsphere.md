@@ -81,6 +81,6 @@ Result:
 
 ![UVSphere](./pic/uvsphere.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Icosphere](./icosphere.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

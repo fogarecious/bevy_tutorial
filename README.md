@@ -107,7 +107,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Cube](./tutorial/cube.md)
   * [Box](./tutorial/box.md)
   * [UVSphere](./tutorial/uvsphere.md)
-  * Icosphere
+  * [Icosphere](./tutorial/icosphere.md)
   * Cylinder
   * Capsule
   * Torus
@@ -133,6 +133,7 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- where to find for different lights, compare -->
   * Shadow
 * Physically Based Rendering
+  <!-- (three spheres) -->
   <!-- base_color -->
   <!-- metallic -->
   <!-- perceptual_roughness -->
@@ -143,7 +144,11 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- ior -->
   <!-- attenuation_distance -->
   <!-- attenuation_color -->
-<!-- Texture -->
+  <!-- base_color_texture -->
+    <!-- Texture -->
+  <!-- emissive -->
+  <!-- emissive_texture -->
+  <!-- alpha_mode -->
 * Fog
   <!-- Atmospheric Fog -->
   <!-- Fog -->
