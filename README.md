@@ -134,11 +134,15 @@ We try to keep each part of the tutorial as simple as possible.
   * Shadow
 * Physically Based Rendering
   <!-- (three spheres) -->
-  <!-- base_color -->
-  <!-- metallic -->
-  <!-- perceptual_roughness -->
+  * Base Colors
+    <!-- base_color -->
+  * Metallic
+    <!-- metallic -->
+  * Perceptual Roughness
+    <!-- perceptual_roughness -->
   <!-- reflectance -->
-  <!-- diffuse_transmission -->
+  * Diffuse Transmission
+    <!-- diffuse_transmission -->
   <!-- specular_transmission -->
   <!-- thickness -->
   <!-- ior -->
