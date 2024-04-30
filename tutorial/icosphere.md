@@ -84,6 +84,6 @@ Result:
 
 ![Icosphere](./pic/icosphere.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Cylinder](./cylinder.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
