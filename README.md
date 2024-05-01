@@ -109,7 +109,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [UVSphere](./tutorial/uvsphere.md)
   * [Icosphere](./tutorial/icosphere.md)
   * [Cylinder](./tutorial/cylinder.md)
-  * Capsule
+  * [Capsule](./tutorial/capsule.md)
   * Torus
   * Plane
 * Transformation
