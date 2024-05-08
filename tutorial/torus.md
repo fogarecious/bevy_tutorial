@@ -1,14 +1,14 @@
-# Capsule
+# Torus
 
-[Capsule](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Capsule.html) is like two spheres connected by a cylinder.
+A [Torus](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html) is a donut-like shape.
 
 ```rust
 commands.spawn(PbrBundle {
     mesh: meshes
         .add(
-            Capsule {
+            Torus {
                 radius: 0.5,
-                depth: 0.5,
+                ring_radius: 0.1,
                 ..default()
             }
             .into(),
@@ -18,9 +18,9 @@ commands.spawn(PbrBundle {
 });
 ```
 
-We can set its [radius](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Capsule.html#structfield.radius) and [depth](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Capsule.html#structfield.depth) (for the height of the cylinder).
+We can set the [radius](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html#structfield.radius) of the [Torus](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html) and the radius ([ring_radius](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html#structfield.ring_radius)) of the [Torus](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html)'s ring.
 
-We set our camera position to `(0, 0, 3)` and make it looking at the origin.
+We set our camera position to `(2, 1, 3)` and make it looking at the origin.
 
 The full code is as follows:
 
@@ -32,7 +32,7 @@ use bevy::{
     ecs::system::{Commands, ResMut},
     math::Vec3,
     pbr::{PbrBundle, PointLightBundle, StandardMaterial},
-    render::mesh::{shape::Capsule, Mesh},
+    render::mesh::{shape::Torus, Mesh},
     transform::components::Transform,
     utils::default,
     DefaultPlugins,
@@ -51,16 +51,16 @@ fn setup(
     mut materials: ResMut<Assets<StandardMaterial>>,
 ) {
     commands.spawn(Camera3dBundle {
-        transform: Transform::from_xyz(0., 0., 3.).looking_at(Vec3::ZERO, Vec3::Y),
+        transform: Transform::from_xyz(2., 1., 3.).looking_at(Vec3::ZERO, Vec3::Y),
         ..default()
     });
 
     commands.spawn(PbrBundle {
         mesh: meshes
             .add(
-                Capsule {
+                Torus {
                     radius: 0.5,
-                    depth: 0.5,
+                    ring_radius: 0.1,
                     ..default()
                 }
                 .into(),
@@ -79,8 +79,8 @@ fn setup(
 
 Result:
 
-![Capsule](./pic/capsule.png)
+![Torus](./pic/torus.png)
 
-:arrow_right:  Next: [Torus](./torus.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)

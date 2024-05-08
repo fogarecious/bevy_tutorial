@@ -110,7 +110,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Icosphere](./tutorial/icosphere.md)
   * [Cylinder](./tutorial/cylinder.md)
   * [Capsule](./tutorial/capsule.md)
-  * Torus
+  * [Torus](./tutorial/torus.md)
   * Plane
 * Transformation
   * 3D Transformation
