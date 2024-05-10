@@ -1,24 +1,16 @@
-# Torus
+# Plane
 
-A [Torus](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html) is a donut-like shape.
+[Plane](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Plane.html) is a thin box that usually acts as a floor or ceiling.
 
 ```rust
 commands.spawn(PbrBundle {
-    mesh: meshes
-        .add(
-            Torus {
-                radius: 0.5,
-                ring_radius: 0.1,
-                ..default()
-            }
-            .into(),
-        )
-        .into(),
+    mesh: meshes.add(Plane::from_size(1.).into()).into(),
     ..default()
 });
 ```
 
-We can set the [radius](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html#structfield.radius) of the [Torus](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html) and the radius ([ring_radius](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html#structfield.ring_radius)) of the [Torus](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Torus.html)'s ring.
+We use the function [from_size](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Plane.html#method.from_size) of [Plane](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Plane.html) to construct a [Plane](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Plane.html).
+The [Plane](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Plane.html) is at the x-z plane by default.
 
 We set our camera position to `(2, 1, 3)` and make it looking at the origin.
 
@@ -32,7 +24,7 @@ use bevy::{
     ecs::system::{Commands, ResMut},
     math::Vec3,
     pbr::{PbrBundle, PointLightBundle, StandardMaterial},
-    render::mesh::{shape::Torus, Mesh},
+    render::mesh::{shape::Plane, Mesh},
     transform::components::Transform,
     utils::default,
     DefaultPlugins,
@@ -56,16 +48,7 @@ fn setup(
     });
 
     commands.spawn(PbrBundle {
-        mesh: meshes
-            .add(
-                Torus {
-                    radius: 0.5,
-                    ring_radius: 0.1,
-                    ..default()
-                }
-                .into(),
-            )
-            .into(),
+        mesh: meshes.add(Plane::from_size(1.).into()).into(),
         material: materials.add(StandardMaterial::default()).into(),
         ..default()
     });
@@ -79,8 +62,8 @@ fn setup(
 
 Result:
 
-![Torus](./pic/torus.png)
+![Plane](./pic/plane.png)
 
-:arrow_right:  Next: [Plane](./plane.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)

@@ -111,7 +111,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Cylinder](./tutorial/cylinder.md)
   * [Capsule](./tutorial/capsule.md)
   * [Torus](./tutorial/torus.md)
-  * Plane
+  * [Plane](./tutorial/plane.md)
 * Transformation
   * 3D Transformation
     <!-- sphere, scale ellipse, rotate, translate -->
