@@ -113,9 +113,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Torus](./tutorial/torus.md)
   * [Plane](./tutorial/plane.md)
 * Transformation
-  * 3D Transformation
-    <!-- sphere, scale ellipse, rotate, translate -->
-    <!-- with plane -->
+  * [3D Transformation](./tutorial/3d_transformation.md)
   * Hierarchical Transformation
     <!-- Parenting -->
     <!-- parent/children, despawn recursively -->
