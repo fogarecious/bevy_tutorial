@@ -114,10 +114,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Plane](./tutorial/plane.md)
 * Transformation
   * [3D Transformation](./tutorial/3d_transformation.md)
-  * Hierarchical Transformation
-    <!-- Parenting -->
-    <!-- parent/children, despawn recursively -->
-    <!-- .with_children(|parent| { -->
+  * [Hierarchical Transformation](./tutorial/hierarchical_transformation.md)
 * Lighting
   <!-- Lighting -->
   * Ambient Light
