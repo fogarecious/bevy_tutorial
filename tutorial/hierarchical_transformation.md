@@ -154,6 +154,6 @@ Although we only set the transformation of the small sphere to be translated alo
 
 To remove objects in a hierarchical structure (i.e., to remove a parent as well as all its children), we can use `commands.entity(id).despawn_recursive()` where `id` is an [Entity](https://docs.rs/bevy/latest/bevy/ecs/entity/struct.Entity.html).
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Ambient Light](./ambient_light.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

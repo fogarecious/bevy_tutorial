@@ -116,8 +116,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [3D Transformation](./tutorial/3d_transformation.md)
   * [Hierarchical Transformation](./tutorial/hierarchical_transformation.md)
 * Lighting
-  <!-- Lighting -->
-  * Ambient Light
+  * [Ambient Light](./tutorial/ambient_light.md)
   * Directional Light
   * Point Light
     <!-- Spherical Area Lights -->
@@ -127,6 +126,7 @@ We try to keep each part of the tutorial as simple as possible.
   * Light Intensity
     <!-- where to find for different lights, compare -->
   * Shadow
+  <!-- Lighting -->
 * Physically Based Rendering
   <!-- (three spheres) -->
   * Base Colors
