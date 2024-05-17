@@ -69,6 +69,6 @@ Result:
 
 ![Ambient Light](./pic/ambient_light.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Directional Light](./directional_light.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

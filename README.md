@@ -117,7 +117,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Hierarchical Transformation](./tutorial/hierarchical_transformation.md)
 * Lighting
   * [Ambient Light](./tutorial/ambient_light.md)
-  * Directional Light
+  * [Directional Light](./tutorial/directional_light.md)
   * Point Light
     <!-- Spherical Area Lights -->
   * Spot Light
