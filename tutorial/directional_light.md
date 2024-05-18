@@ -91,6 +91,6 @@ Result:
 
 ![Directional Light](./pic/directional_light.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Point Light](./point_light.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

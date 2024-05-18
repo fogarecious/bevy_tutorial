@@ -118,8 +118,7 @@ We try to keep each part of the tutorial as simple as possible.
 * Lighting
   * [Ambient Light](./tutorial/ambient_light.md)
   * [Directional Light](./tutorial/directional_light.md)
-  * Point Light
-    <!-- Spherical Area Lights -->
+  * [Point Light](./tutorial/point_light.md)
   * Spot Light
     <!-- Spotlight -->
   * Light Colors
