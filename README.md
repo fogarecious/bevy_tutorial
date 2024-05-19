@@ -119,8 +119,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Ambient Light](./tutorial/ambient_light.md)
   * [Directional Light](./tutorial/directional_light.md)
   * [Point Light](./tutorial/point_light.md)
-  * Spot Light
-    <!-- Spotlight -->
+  * [Spot Light](./tutorial/spot_light.md)
   * Light Colors
   * Light Intensity
     <!-- where to find for different lights, compare -->

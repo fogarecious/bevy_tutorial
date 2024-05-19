@@ -1,19 +1,18 @@
-# Point Light
+# Spot Light
 
-Point light has a center that acts as its light source.
-Objects near the center of the light are brighter.
+Spot light starts from a point, follows a direction and creates a light of a cone shape.
 
-We use [PointLightBundle](https://docs.rs/bevy/latest/bevy/pbr/struct.PointLightBundle.html) to create a point light.
+We use [SpotLightBundle](https://docs.rs/bevy/latest/bevy/pbr/struct.SpotLightBundle.html) to create a spot light.
 
 ```rust
-commands.spawn(PointLightBundle {
-    transform: Transform::from_xyz(1., 0.5, 1.),
+commands.spawn(SpotLightBundle {
+    transform: Transform::from_xyz(0., 2., 0.).looking_at(Vec3::new(0., -1., 0.), Vec3::Z),
     ..default()
 });
 ```
 
-We use [transform](https://docs.rs/bevy/latest/bevy/pbr/struct.PointLightBundle.html#structfield.transform) of [PointLightBundle](https://docs.rs/bevy/latest/bevy/pbr/struct.PointLightBundle.html) to set the center position of the light.
-In the example, the position is at `(1, 0.5, 1)`.
+In [transform](https://docs.rs/bevy/latest/bevy/pbr/struct.SpotLightBundle.html#structfield.transform) of [SpotLightBundle](https://docs.rs/bevy/latest/bevy/pbr/struct.SpotLightBundle.html), we use [from_xyz](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#method.from_xyz) and [looking_at](https://docs.rs/bevy/latest/bevy/transform/components/struct.Transform.html#method.looking_at) to set the start position and direction of the light respectively.
+In the example, the light starts from the position `(0, 2, 0)` and faces to the direction `(0, -1, 0)`.
 
 We place a [Plane](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Plane.html) to indicate the x-z plane and put a [Cube](https://docs.rs/bevy/latest/bevy/prelude/shape/struct.Cube.html) on it.
 We set our camera position to `(2, 2, 3)` and make it looking at the origin.
@@ -27,7 +26,7 @@ use bevy::{
     core_pipeline::core_3d::Camera3dBundle,
     ecs::system::{Commands, ResMut},
     math::Vec3,
-    pbr::{PbrBundle, PointLightBundle, StandardMaterial},
+    pbr::{PbrBundle, SpotLightBundle, StandardMaterial},
     render::mesh::{
         shape::{Cube, Plane},
         Mesh,
@@ -67,8 +66,8 @@ fn setup(
         ..default()
     });
 
-    commands.spawn(PointLightBundle {
-        transform: Transform::from_xyz(1., 0.5, 1.),
+    commands.spawn(SpotLightBundle {
+        transform: Transform::from_xyz(0., 2., 0.).looking_at(Vec3::new(0., -1., 0.), Vec3::Z),
         ..default()
     });
 }
@@ -76,8 +75,8 @@ fn setup(
 
 Result:
 
-![Point Light](./pic/point_light.png)
+![Spot Light](./pic/spot_light.png)
 
-:arrow_right:  Next: [Spot Light](./spot_light.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
