@@ -120,7 +120,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Directional Light](./tutorial/directional_light.md)
   * [Point Light](./tutorial/point_light.md)
   * [Spot Light](./tutorial/spot_light.md)
-  * Light Colors
+  * [Light Colors](./tutorial/light_colors.md)
   * Light Intensity
     <!-- where to find for different lights, compare -->
   * Shadow

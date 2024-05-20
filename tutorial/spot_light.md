@@ -77,6 +77,6 @@ Result:
 
 ![Spot Light](./pic/spot_light.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Light Colors](./light_colors.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
