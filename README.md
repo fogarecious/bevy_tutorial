@@ -129,6 +129,9 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- (three spheres) -->
   * Base Colors
     <!-- base_color -->
+  * Base Color Textures
+    <!-- base_color_texture -->
+    <!-- Texture -->
   * Metallic
     <!-- metallic -->
   * Perceptual Roughness
@@ -136,16 +139,21 @@ We try to keep each part of the tutorial as simple as possible.
   <!-- reflectance -->
   * Diffuse Transmission
     <!-- diffuse_transmission -->
-  <!-- specular_transmission -->
-  <!-- thickness -->
-  <!-- ior -->
-  <!-- attenuation_distance -->
-  <!-- attenuation_color -->
-  <!-- base_color_texture -->
-    <!-- Texture -->
-  <!-- emissive -->
-  <!-- emissive_texture -->
-  <!-- alpha_mode -->
+  * Specular Transmission
+    <!-- specular_transmission -->
+  * Thickness
+    <!-- thickness -->
+  * Index Of Refraction
+    <!-- ior -->
+  * Attenuation
+    <!-- attenuation_distance -->
+    <!-- attenuation_color -->
+  * Emissive
+      <!-- emissive -->
+  * Emissive Textures
+    <!-- emissive_texture -->
+  * Alpha Mode
+    <!-- alpha_mode -->
 * Fog
   <!-- Atmospheric Fog -->
   <!-- Fog -->
