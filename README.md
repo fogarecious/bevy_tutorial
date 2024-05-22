@@ -121,8 +121,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Point Light](./tutorial/point_light.md)
   * [Spot Light](./tutorial/spot_light.md)
   * [Light Colors](./tutorial/light_colors.md)
-  * Light Intensity
-    <!-- where to find for different lights, compare -->
+  * [Light Intensity](./tutorial/light_intensity.md)
   * Shadow
   <!-- Lighting -->
 * Physically Based Rendering

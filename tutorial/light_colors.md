@@ -124,6 +124,6 @@ Result:
 
 ![Light Colors](./pic/light_colors.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Light Intensity](./light_intensity.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
