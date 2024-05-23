@@ -122,8 +122,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Spot Light](./tutorial/spot_light.md)
   * [Light Colors](./tutorial/light_colors.md)
   * [Light Intensity](./tutorial/light_intensity.md)
-  * Shadow
-  <!-- Lighting -->
+  * [Shadow](./tutorial/shadow.md)
 * Physically Based Rendering
   <!-- (three spheres) -->
   * Base Colors
@@ -140,6 +139,7 @@ We try to keep each part of the tutorial as simple as possible.
     <!-- diffuse_transmission -->
   * Specular Transmission
     <!-- specular_transmission -->
+  <!-- reflectance -->
   * Thickness
     <!-- thickness -->
   * Index Of Refraction

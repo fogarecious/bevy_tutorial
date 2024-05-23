@@ -43,6 +43,6 @@ Spot light with intensity 5000:
 
 ![Light Intensity 8](./pic/light_intensity_8.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Shadow](./shadow.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
