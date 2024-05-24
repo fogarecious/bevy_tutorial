@@ -124,9 +124,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Light Intensity](./tutorial/light_intensity.md)
   * [Shadow](./tutorial/shadow.md)
 * Physically Based Rendering
-  <!-- (three spheres) -->
-  * Base Colors
-    <!-- base_color -->
+  * [Base Colors](./tutorial/base_colors.md)
   * Base Color Textures
     <!-- base_color_texture -->
     <!-- Texture -->

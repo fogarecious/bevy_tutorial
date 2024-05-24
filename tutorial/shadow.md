@@ -103,6 +103,6 @@ Result:
 
 ![Shadow](./pic/shadow.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Base Colors](./base_colors.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
