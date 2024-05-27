@@ -125,9 +125,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Shadow](./tutorial/shadow.md)
 * Physically Based Rendering
   * [Base Colors](./tutorial/base_colors.md)
-  * Base Color Textures
-    <!-- base_color_texture -->
-    <!-- Texture -->
+  * [Base Color Textures](./tutorial/base_color_textures.md)
   * Metallic
     <!-- metallic -->
   * Perceptual Roughness

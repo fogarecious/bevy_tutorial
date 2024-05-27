@@ -1,37 +1,41 @@
-# Base Colors
+# Base Color Textures
 
-To change the appearance of 3D objects, we use [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html) in [PbrBundle](https://docs.rs/bevy/latest/bevy/pbr/type.PbrBundle.html).
+Similar to 2D rendering, we can also paste textures to 3D objects.
 
-We can change the color of 3D objects.
-This is done by changing [base_color](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.base_color) of [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
+Assume the `assets` directory has an image named [icon.png](https://github.com/bevyengine/bevy/blob/main/assets/branding/icon.png), which we will use as our texture.
+
+![A Texture](https://github.com/bevyengine/bevy/blob/main/assets/branding/icon.png?raw=true)
+
+We use [base_color_texture](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.base_color_texture) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html) to paste the texture to a 3D object.
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        base_color: Color::RED,
+        base_color_texture: Some(asset_server.load("icon.png")),
         ..default()
     }),
     ..default()
 });
 ```
 
-In the following example, we create three spheres.
-The color of the left, middle and right sphere is red, green and blue respectively.
+The [base_color_texture](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.base_color_texture) needs `Option<Handle<Image>>`, in which [Handle](https://docs.rs/bevy/latest/bevy/asset/enum.Handle.html)<[Image](https://docs.rs/bevy/latest/bevy/render/texture/struct.Image.html)> can be [load](https://docs.rs/bevy/latest/bevy/asset/struct.AssetServer.html#method.load)ed by [AssetServer](https://docs.rs/bevy/latest/bevy/asset/struct.AssetServer.html).
+
+In the example, we create two spheres.
+The left sphere has no textures whereas the right one has the texture.
+
+The full code is as follows:
 
 ```rust
 use bevy::{
     app::{App, Startup},
-    asset::Assets,
+    asset::{AssetServer, Assets},
     core_pipeline::core_3d::Camera3dBundle,
-    ecs::system::{Commands, ResMut},
+    ecs::system::{Commands, Res, ResMut},
     math::Vec3,
     pbr::{DirectionalLight, DirectionalLightBundle, PbrBundle, StandardMaterial},
-    render::{
-        color::Color,
-        mesh::{
-            shape::{Plane, UVSphere},
-            Mesh,
-        },
+    render::mesh::{
+        shape::{Plane, UVSphere},
+        Mesh,
     },
     transform::components::Transform,
     utils::default,
@@ -49,6 +53,7 @@ fn setup(
     mut commands: Commands,
     mut meshes: ResMut<Assets<Mesh>>,
     mut materials: ResMut<Assets<StandardMaterial>>,
+    asset_server: Res<AssetServer>,
 ) {
     commands.spawn(Camera3dBundle {
         transform: Transform::from_xyz(0., 2., 3.).looking_at(Vec3::new(0., 0.5, 0.), Vec3::Y),
@@ -64,28 +69,8 @@ fn setup(
             }
             .into(),
         ),
-        material: materials.add(StandardMaterial {
-            base_color: Color::RED,
-            ..default()
-        }),
-        transform: Transform::from_xyz(-1.25, 0.5, 0.),
-        ..default()
-    });
-
-    // middle
-    commands.spawn(PbrBundle {
-        mesh: meshes.add(
-            UVSphere {
-                radius: 0.5,
-                ..default()
-            }
-            .into(),
-        ),
-        material: materials.add(StandardMaterial {
-            base_color: Color::GREEN,
-            ..default()
-        }),
-        transform: Transform::from_xyz(0., 0.5, 0.),
+        material: materials.add(StandardMaterial::default()),
+        transform: Transform::from_xyz(-0.83, 0.5, 0.),
         ..default()
     });
 
@@ -99,10 +84,10 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
-            base_color: Color::BLUE,
+            base_color_texture: Some(asset_server.load("icon.png")),
             ..default()
         }),
-        transform: Transform::from_xyz(1.25, 0.5, 0.),
+        transform: Transform::from_xyz(0.83, 0.5, 0.),
         ..default()
     });
 
@@ -126,8 +111,8 @@ fn setup(
 
 Result:
 
-![Base Colors](./pic/base_colors.png)
+![Base Color Textures](./pic/base_color_textures.png)
 
-:arrow_right:  Next: [Base Color Textures](./base_color_textures.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
