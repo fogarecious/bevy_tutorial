@@ -1,36 +1,33 @@
-# Base Color Textures
+# Metallic
 
-Similar to 2D rendering, we can also paste textures to 3D objects.
+We can make a 3D object to look like a metal.
 
-Assume the `assets` directory has an image named [icon.png](https://github.com/bevyengine/bevy/blob/main/assets/branding/icon.png), which we will use as our texture.
-
-![A Texture](https://github.com/bevyengine/bevy/blob/main/assets/branding/icon.png?raw=true)
-
-We use [base_color_texture](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.base_color_texture) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html) to paste the texture to a 3D object.
+To do this, we use [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) of [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        base_color_texture: Some(asset_server.load("icon.png")),
+        metallic: 1.,
         ..default()
     }),
     ..default()
 });
 ```
 
-The [base_color_texture](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.base_color_texture) needs `Option<Handle<Image>>`, in which [Handle](https://docs.rs/bevy/latest/bevy/asset/enum.Handle.html)<[Image](https://docs.rs/bevy/latest/bevy/render/texture/struct.Image.html)> can be [load](https://docs.rs/bevy/latest/bevy/asset/struct.AssetServer.html#method.load)ed by [AssetServer](https://docs.rs/bevy/latest/bevy/asset/struct.AssetServer.html).
+The value of [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) is between `0` and `1`.
+The larger the value, the more the object looks like a metal.
 
-In the example, we create two spheres.
-The left sphere has no textures whereas the right one has the texture.
+In the following example, we have three spheres.
+From left to right, their [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) is `0`, `0.5` and `1` respectively.
 
 The full code is as follows:
 
 ```rust
 use bevy::{
     app::{App, Startup},
-    asset::{AssetServer, Assets},
+    asset::Assets,
     core_pipeline::core_3d::Camera3dBundle,
-    ecs::system::{Commands, Res, ResMut},
+    ecs::system::{Commands, ResMut},
     math::Vec3,
     pbr::{DirectionalLight, DirectionalLightBundle, PbrBundle, StandardMaterial},
     render::mesh::{
@@ -53,7 +50,6 @@ fn setup(
     mut commands: Commands,
     mut meshes: ResMut<Assets<Mesh>>,
     mut materials: ResMut<Assets<StandardMaterial>>,
-    asset_server: Res<AssetServer>,
 ) {
     commands.spawn(Camera3dBundle {
         transform: Transform::from_xyz(0., 2., 3.).looking_at(Vec3::new(0., 0.5, 0.), Vec3::Y),
@@ -69,8 +65,28 @@ fn setup(
             }
             .into(),
         ),
-        material: materials.add(StandardMaterial::default()),
-        transform: Transform::from_xyz(-0.83, 0.5, 0.),
+        material: materials.add(StandardMaterial {
+            metallic: 0.,
+            ..default()
+        }),
+        transform: Transform::from_xyz(-1.25, 0.5, 0.),
+        ..default()
+    });
+
+    // middle
+    commands.spawn(PbrBundle {
+        mesh: meshes.add(
+            UVSphere {
+                radius: 0.5,
+                ..default()
+            }
+            .into(),
+        ),
+        material: materials.add(StandardMaterial {
+            metallic: 0.5,
+            ..default()
+        }),
+        transform: Transform::from_xyz(0., 0.5, 0.),
         ..default()
     });
 
@@ -84,10 +100,10 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
-            base_color_texture: Some(asset_server.load("icon.png")),
+            metallic: 1.,
             ..default()
         }),
-        transform: Transform::from_xyz(0.83, 0.5, 0.),
+        transform: Transform::from_xyz(1.25, 0.5, 0.),
         ..default()
     });
 
@@ -111,8 +127,8 @@ fn setup(
 
 Result:
 
-![Base Color Textures](./pic/base_color_textures.png)
+![Metallic](./pic/metallic.png)
 
-:arrow_right:  Next: [Metallic](./metallic.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
