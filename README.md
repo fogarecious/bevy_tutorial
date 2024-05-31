@@ -127,9 +127,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Base Colors](./tutorial/base_colors.md)
   * [Base Color Textures](./tutorial/base_color_textures.md)
   * [Metallic](./tutorial/metallic.md)
-  * Perceptual Roughness
-    <!-- perceptual_roughness -->
-  <!-- reflectance -->
+  * [Perceptual Roughness](./tutorial/perceptual_roughness.md)
   * Diffuse Transmission
     <!-- diffuse_transmission -->
   * Specular Transmission

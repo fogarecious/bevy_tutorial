@@ -1,24 +1,26 @@
-# Metallic
+# Perceptual Roughness
 
-We can make a 3D object to look like a metal.
+For each metal object in our 3D scene, we can see a highlight.
+The range of this highlight can be controlled.
 
-To do this, we use [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) of [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
+We use [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) of [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html) to control the range of highlight.
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        metallic: 1.,
+        perceptual_roughness: 1.,
         ..default()
     }),
     ..default()
 });
 ```
 
-The value of [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) is between `0` and `1`.
-The larger the value, the more the object looks like a metal.
+The value of [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) is between `0.089` and `1`.
+The larger the value, the larger the range of highlight.
 
-In the following example, we have three spheres.
-From left to right, their [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) is `0`, `0.5` and `1` respectively.
+In the following example, we create three spheres.
+From left to right, their [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) is `0.089`, `0.5` and `1` respectively.
+To make the difference obvious, we set all [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) to `1`.
 
 The full code is as follows:
 
@@ -66,7 +68,8 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
-            metallic: 0.,
+            perceptual_roughness: 0.089,
+            metallic: 1.,
             ..default()
         }),
         transform: Transform::from_xyz(-1.25, 0.5, 0.),
@@ -83,7 +86,8 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
-            metallic: 0.5,
+            perceptual_roughness: 0.5,
+            metallic: 1.,
             ..default()
         }),
         transform: Transform::from_xyz(0., 0.5, 0.),
@@ -100,6 +104,7 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
+            perceptual_roughness: 1.,
             metallic: 1.,
             ..default()
         }),
@@ -127,8 +132,8 @@ fn setup(
 
 Result:
 
-![Metallic](./pic/metallic.png)
+![Perceptual Roughness](./pic/perceptual_roughness.png)
 
-:arrow_right:  Next: [Perceptual Roughness](./perceptual_roughness.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
