@@ -1,26 +1,26 @@
-# Perceptual Roughness
+# Diffuse Transmission
 
-For each metal object in our 3D scene, we can see a highlight.
-The range of this highlight can be controlled.
+There are some ways to make a light going around an object.
 
-We use [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) of [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html) to control the range of highlight.
+We use [diffuse_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.diffuse_transmission) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
+This field makes a light transmitted to the back of the object, which results in the backside of the object brighter.
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        perceptual_roughness: 1.,
+        diffuse_transmission: 1.,
         ..default()
     }),
     ..default()
 });
 ```
 
-The value of [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) is between `0.089` and `1`.
-The larger the value, the larger the range of highlight.
+The value of [diffuse_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.diffuse_transmission) is between `0` and `1`.
+The larger the value, the more it transmits a light to the back of the object.
+Note that this field does not make the object transparent.
 
 In the following example, we create three spheres.
-From left to right, their [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) is `0.089`, `0.5` and `1` respectively.
-To make the difference obvious, we set all [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) to `1`.
+From left to right, their [diffuse_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.diffuse_transmission) is `0`, `0.5` and `1` respectively.
 
 The full code is as follows:
 
@@ -68,8 +68,7 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
-            perceptual_roughness: 0.089,
-            metallic: 1.,
+            diffuse_transmission: 0.,
             ..default()
         }),
         transform: Transform::from_xyz(-1.25, 0.5, 0.),
@@ -86,8 +85,7 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
-            perceptual_roughness: 0.5,
-            metallic: 1.,
+            diffuse_transmission: 0.5,
             ..default()
         }),
         transform: Transform::from_xyz(0., 0.5, 0.),
@@ -104,8 +102,7 @@ fn setup(
             .into(),
         ),
         material: materials.add(StandardMaterial {
-            perceptual_roughness: 1.,
-            metallic: 1.,
+            diffuse_transmission: 1.,
             ..default()
         }),
         transform: Transform::from_xyz(1.25, 0.5, 0.),
@@ -113,8 +110,8 @@ fn setup(
     });
 
     commands.spawn(PbrBundle {
-        mesh: meshes.add(Plane::from_size(5.).into()),
-        material: materials.add(StandardMaterial::default()),
+        mesh: meshes.add(Plane::from_size(5.).into()).into(),
+        material: materials.add(StandardMaterial::default()).into(),
         ..default()
     });
 
@@ -132,8 +129,8 @@ fn setup(
 
 Result:
 
-![Perceptual Roughness](./pic/perceptual_roughness.png)
+![Diffuse Transmission](./pic/diffuse_transmission.png)
 
-:arrow_right:  Next: [Diffuse Transmission](./diffuse_transmission.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
