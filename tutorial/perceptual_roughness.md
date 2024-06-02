@@ -19,7 +19,7 @@ The value of [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.
 The larger the value, the larger the range of highlight.
 
 In the following example, we create three spheres.
-From left to right, their [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) is `0.089`, `0.5` and `1` respectively.
+From the left to right, their [perceptual_roughness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.perceptual_roughness) are `0.089`, `0.5` and `1` respectively.
 To make the difference obvious, we set all [metallic](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.metallic) to `1`.
 
 The full code is as follows:

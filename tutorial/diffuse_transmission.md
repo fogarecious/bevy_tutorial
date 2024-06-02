@@ -20,7 +20,7 @@ The larger the value, the more it transmits a light to the back of the object.
 Note that this field does not make the object transparent.
 
 In the following example, we create three spheres.
-From left to right, their [diffuse_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.diffuse_transmission) is `0`, `0.5` and `1` respectively.
+From the left to right, their [diffuse_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.diffuse_transmission) are `0`, `0.5` and `1` respectively.
 
 The full code is as follows:
 
@@ -131,6 +131,6 @@ Result:
 
 ![Diffuse Transmission](./pic/diffuse_transmission.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Specular Transmission](./specular_transmission.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
