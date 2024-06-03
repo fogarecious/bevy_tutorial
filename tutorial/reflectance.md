@@ -1,28 +1,25 @@
-# Specular Transmission
+# Reflectance
 
-We can make a light transmitted through an object.
+We can make an object to reflect a light even the object is transparent.
 
-To do this, we use [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
+We use [reflectance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.reflectance) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        specular_transmission: 1.,
+        reflectance: 1.,
         ..default()
     }),
     ..default()
 });
 ```
 
-This field [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) makes the object transparent.
-The value of [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) is between `0` and `1`.
-The larger the value, the more the transparency.
+The value of [reflectance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.reflectance) is from `0` to `1`.
+The larger the value, the more the reflection.
 
 In the following example, we create three cubes.
-From the left to right, their [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) are `0`, `0.8` and `1` respectively.
-To see the transparency, we create an orange plane with a texture [board.png](./pic/board.png), which is shown below.
-
-![Texture](./pic/board.png)
+From the left to right, their [reflectance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.reflectance) are `0`, `0.5` and `1` respectively.
+To make the difference obvious, we set all [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) to `1` and we create an orange plane with a texture [board.png](./pic/board.png).
 
 The full code is as follows:
 
@@ -68,7 +65,8 @@ fn setup(
     commands.spawn(PbrBundle {
         mesh: meshes.add(Cube::new(1.).into()),
         material: materials.add(StandardMaterial {
-            specular_transmission: 0.,
+            specular_transmission: 1.,
+            reflectance: 0.,
             ..default()
         }),
         transform: Transform::from_xyz(-1.25, 0.5, 0.),
@@ -79,7 +77,8 @@ fn setup(
     commands.spawn(PbrBundle {
         mesh: meshes.add(Cube::new(1.).into()),
         material: materials.add(StandardMaterial {
-            specular_transmission: 0.8,
+            specular_transmission: 1.,
+            reflectance: 0.5,
             ..default()
         }),
         transform: Transform::from_xyz(0., 0.5, 0.),
@@ -91,6 +90,7 @@ fn setup(
         mesh: meshes.add(Cube::new(1.).into()),
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
+            reflectance: 1.,
             ..default()
         }),
         transform: Transform::from_xyz(1.25, 0.5, 0.),
@@ -109,7 +109,7 @@ fn setup(
 
     commands.spawn(DirectionalLightBundle {
         directional_light: DirectionalLight {
-            illuminance: 20000.,
+            illuminance: 50000.,
             shadows_enabled: true,
             ..default()
         },
@@ -121,8 +121,8 @@ fn setup(
 
 Result:
 
-![Specular Transmission](./pic/specular_transmission.png)
+![Reflectance](./pic/reflectance.png)
 
-:arrow_right:  Next: [Reflectance](./reflectance.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)

@@ -129,8 +129,8 @@ We try to keep each part of the tutorial as simple as possible.
   * [Metallic](./tutorial/metallic.md)
   * [Perceptual Roughness](./tutorial/perceptual_roughness.md)
   * [Diffuse Transmission](./tutorial/diffuse_transmission.md)
-  <!-- reflectance -->
   * [Specular Transmission](./tutorial/specular_transmission.md)
+  * [Reflectance](./tutorial/reflectance.md)
   * Thickness
     <!-- thickness -->
   * Index Of Refraction
