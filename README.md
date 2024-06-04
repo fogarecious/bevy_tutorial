@@ -131,8 +131,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Diffuse Transmission](./tutorial/diffuse_transmission.md)
   * [Specular Transmission](./tutorial/specular_transmission.md)
   * [Reflectance](./tutorial/reflectance.md)
-  * Thickness
-    <!-- thickness -->
+  * [Thickness](./tutorial/thickness.md)
   * Index Of Refraction
     <!-- ior -->
   * Attenuation

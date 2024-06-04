@@ -1,25 +1,26 @@
-# Reflectance
+# Thickness
 
-We can make an object to reflect a light even the object is transparent.
+When an object is transparent, we can make it looks like a thick lens.
 
-We use [reflectance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.reflectance) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
+To do this, we use [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        reflectance: 1.,
+        thickness: 1.,
         ..default()
     }),
     ..default()
 });
 ```
 
-The value of [reflectance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.reflectance) is from `0` to `1`.
-The larger the value, the more the reflection.
+The value of [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) is either `0` or not `0`.
+To turn on this feature, we give it a non-zero value.
 
-In the following example, we create three cubes.
-From the left to right, their [reflectance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.reflectance) are `0`, `0.5` and `1` respectively.
-To make the difference obvious, we set all [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) to `1` and we create an orange plane with a texture [board.png](./pic/board.png).
+In the following example, we create two cubes.
+The left cube has [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) `0` and the right one has `1`.
+To make the difference obvious, we set all [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) to 1.
+We also create an orange plane with a texture [board.png](./pic/board.png) and disable all shadows.
 
 The full code is as follows:
 
@@ -66,22 +67,10 @@ fn setup(
         mesh: meshes.add(Cube::new(1.).into()),
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
-            reflectance: 0.,
+            thickness: 0.,
             ..default()
         }),
-        transform: Transform::from_xyz(-1.25, 0.5, 0.),
-        ..default()
-    });
-
-    // middle
-    commands.spawn(PbrBundle {
-        mesh: meshes.add(Cube::new(1.).into()),
-        material: materials.add(StandardMaterial {
-            specular_transmission: 1.,
-            reflectance: 0.5,
-            ..default()
-        }),
-        transform: Transform::from_xyz(0., 0.5, 0.),
+        transform: Transform::from_xyz(-0.83, 0.5, 0.),
         ..default()
     });
 
@@ -90,10 +79,10 @@ fn setup(
         mesh: meshes.add(Cube::new(1.).into()),
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
-            reflectance: 1.,
+            thickness: 1.,
             ..default()
         }),
-        transform: Transform::from_xyz(1.25, 0.5, 0.),
+        transform: Transform::from_xyz(0.83, 0.5, 0.),
         ..default()
     });
 
@@ -110,7 +99,6 @@ fn setup(
     commands.spawn(DirectionalLightBundle {
         directional_light: DirectionalLight {
             illuminance: 50000.,
-            shadows_enabled: true,
             ..default()
         },
         transform: Transform::default().looking_to(Vec3::new(-1., -1., -1.), Vec3::Y),
@@ -121,8 +109,8 @@ fn setup(
 
 Result:
 
-![Reflectance](./pic/reflectance.png)
+![Thickness](./pic/thickness.png)
 
-:arrow_right:  Next: [Thickness](./thickness.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
