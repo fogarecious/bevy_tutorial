@@ -1,25 +1,25 @@
-# Thickness
+# Index Of Refraction
 
-When an object is transparent, we can make it looks like a thick lens.
+For a transparent object, we can change its refraction, so that the object looks like a window glass or a frosted glass.
 
-To do this, we use [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
+To do this, we use [ior](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.ior) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        thickness: 1.,
+        ior: 1.,
         ..default()
     }),
     ..default()
 });
 ```
 
-The value of [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) is either `0` or not `0`.
-To turn on this feature, we give it a non-zero value.
+The value of [ior](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.ior) is at least `1` and can be up to infinity.
+The larger the value, the more it looks like a frosted glass (or more blurry).
 
-In the following example, we create two cubes.
-The left cube has [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) `0` and the right one has `1`.
-To make the difference obvious, we set all [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) to 1.
+In the following example, we create three cubes.
+From the left to right, their [ior](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.ior) are `1`, `2` and `3` respectively.
+To make the difference obvious, we set all [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) and [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) to `1`.
 We also create an orange plane with a texture [board.png](./pic/board.png) and disable all shadows.
 
 The full code is as follows:
@@ -67,10 +67,24 @@ fn setup(
         mesh: meshes.add(Cube::new(1.).into()),
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
-            thickness: 0.,
+            thickness: 1.,
+            ior: 1.,
             ..default()
         }),
-        transform: Transform::from_xyz(-0.83, 0.5, 0.),
+        transform: Transform::from_xyz(-1.25, 0.5, 0.),
+        ..default()
+    });
+
+    // middle
+    commands.spawn(PbrBundle {
+        mesh: meshes.add(Cube::new(1.).into()),
+        material: materials.add(StandardMaterial {
+            specular_transmission: 1.,
+            thickness: 1.,
+            ior: 2.,
+            ..default()
+        }),
+        transform: Transform::from_xyz(0., 0.5, 0.),
         ..default()
     });
 
@@ -80,9 +94,10 @@ fn setup(
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
             thickness: 1.,
+            ior: 3.,
             ..default()
         }),
-        transform: Transform::from_xyz(0.83, 0.5, 0.),
+        transform: Transform::from_xyz(1.25, 0.5, 0.),
         ..default()
     });
 
@@ -109,8 +124,8 @@ fn setup(
 
 Result:
 
-![Thickness](./pic/thickness.png)
+![Index Of Refraction](./pic/index_of_refraction.png)
 
-:arrow_right:  Next: [Index Of Refraction](./index_of_refraction.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)

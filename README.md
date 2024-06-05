@@ -132,8 +132,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Specular Transmission](./tutorial/specular_transmission.md)
   * [Reflectance](./tutorial/reflectance.md)
   * [Thickness](./tutorial/thickness.md)
-  * Index Of Refraction
-    <!-- ior -->
+  * [Index Of Refraction](./tutorial/index_of_refraction.md)
   * Attenuation
     <!-- attenuation_distance -->
     <!-- attenuation_color -->
