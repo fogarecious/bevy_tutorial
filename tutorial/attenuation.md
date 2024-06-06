@@ -1,24 +1,28 @@
-# Index Of Refraction
+# Attenuation
 
-For a transparent object, we can change its refraction, so that the object looks like a window glass or a frosted glass.
+When a light goes through a transparent object, we can control how much light that will be absorbed.
 
-To do this, we use [ior](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.ior) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
+To do this, we use [attenuation_distance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_distance) and [attenuation_color](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_color) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html).
 
 ```rust
 commands.spawn(PbrBundle {
     material: materials.add(StandardMaterial {
-        ior: 1.,
+        attenuation_distance: 1.,
+        attenuation_color: Color::BLACK,
         ..default()
     }),
     ..default()
 });
 ```
 
-The value of [ior](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.ior) is at least `1` and can be up to infinity.
-The larger the value, the more it looks like a frosted glass (or more blurry).
+The value of [attenuation_distance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_distance) is at least `0` and can be up to infinity.
+The value means: when a light goes through the object, it is absorbed after it has walked for the [attenuation_distance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_distance).
+
+The [attenuation_color](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_color) specifies the color of light that will not be absorbed no matter what the [attenuation_distance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_distance) is.
 
 In the following example, we create three cubes.
-From the left to right, their [ior](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.ior) are `1`, `2` and `3` respectively.
+From the left to right, their [attenuation_distance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_distance) are `infinity`, `1` and `0.1` respectively.
+All [attenuation_color](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_color)s are black, which means all light should be absorbed after the [attenuation_distance](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.attenuation_distance).
 To make the difference obvious, we set all [specular_transmission](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.specular_transmission) and [thickness](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.thickness) to `1`.
 We also create an orange plane with a texture [board.png](./pic/board.png) and disable all shadows.
 
@@ -68,7 +72,8 @@ fn setup(
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
             thickness: 1.,
-            ior: 1.,
+            attenuation_distance: f32::INFINITY,
+            attenuation_color: Color::BLACK,
             ..default()
         }),
         transform: Transform::from_xyz(-1.25, 0.5, 0.),
@@ -81,7 +86,8 @@ fn setup(
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
             thickness: 1.,
-            ior: 2.,
+            attenuation_distance: 1.,
+            attenuation_color: Color::BLACK,
             ..default()
         }),
         transform: Transform::from_xyz(0., 0.5, 0.),
@@ -94,7 +100,8 @@ fn setup(
         material: materials.add(StandardMaterial {
             specular_transmission: 1.,
             thickness: 1.,
-            ior: 3.,
+            attenuation_distance: 0.1,
+            attenuation_color: Color::BLACK,
             ..default()
         }),
         transform: Transform::from_xyz(1.25, 0.5, 0.),
@@ -124,8 +131,8 @@ fn setup(
 
 Result:
 
-![Index Of Refraction](./pic/index_of_refraction.png)
+![Attenuation](./pic/attenuation.png)
 
-:arrow_right:  Next: [Attenuation](./attenuation.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)

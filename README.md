@@ -133,9 +133,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Reflectance](./tutorial/reflectance.md)
   * [Thickness](./tutorial/thickness.md)
   * [Index Of Refraction](./tutorial/index_of_refraction.md)
-  * Attenuation
-    <!-- attenuation_distance -->
-    <!-- attenuation_color -->
+  * [Attenuation](./tutorial/attenuation.md)
   * Emissive
       <!-- emissive -->
   * Emissive Textures
