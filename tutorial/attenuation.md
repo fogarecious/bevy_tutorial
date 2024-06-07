@@ -133,6 +133,6 @@ Result:
 
 ![Attenuation](./pic/attenuation.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Emissive](./emissive.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

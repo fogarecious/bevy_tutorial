@@ -134,8 +134,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Thickness](./tutorial/thickness.md)
   * [Index Of Refraction](./tutorial/index_of_refraction.md)
   * [Attenuation](./tutorial/attenuation.md)
-  * Emissive
-      <!-- emissive -->
+  * [Emissive](./tutorial/emissive.md)
   * Emissive Textures
     <!-- emissive_texture -->
   * Alpha Mode
