@@ -135,8 +135,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Index Of Refraction](./tutorial/index_of_refraction.md)
   * [Attenuation](./tutorial/attenuation.md)
   * [Emissive](./tutorial/emissive.md)
-  * Emissive Textures
-    <!-- emissive_texture -->
+  * [Emissive Textures](./tutorial/emissive_textures.md)
   * Alpha Mode
     <!-- alpha_mode -->
 * Fog
