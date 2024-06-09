@@ -118,6 +118,6 @@ Result:
 
 ![Emissive Textures](./pic/emissive_textures.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Alpha Mode](./alpha_mode.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

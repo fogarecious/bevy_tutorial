@@ -136,14 +136,18 @@ We try to keep each part of the tutorial as simple as possible.
   * [Attenuation](./tutorial/attenuation.md)
   * [Emissive](./tutorial/emissive.md)
   * [Emissive Textures](./tutorial/emissive_textures.md)
-  * Alpha Mode
-    <!-- alpha_mode -->
+  * [Alpha Mode](./tutorial/alpha_mode.md)
 * Fog
   <!-- Atmospheric Fog -->
   <!-- Fog -->
   <!-- bevy::pbr::FogSettings -->
+  * Basic Fog
+  * Sky
+  * Moonlight
+  * Sunlight
 * Skipping The White Window
   <!-- window_settings.rs -->
+  <!-- Window Settings -->
 <!-- ? multiple windows/cameras, camera background, 2d+3d -->
 <!-- draw on images -->
 
