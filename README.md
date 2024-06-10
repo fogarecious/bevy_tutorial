@@ -138,10 +138,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Emissive Textures](./tutorial/emissive_textures.md)
   * [Alpha Mode](./tutorial/alpha_mode.md)
 * Fog
-  <!-- Atmospheric Fog -->
-  <!-- Fog -->
-  <!-- bevy::pbr::FogSettings -->
-  * Basic Fog
+  * [Basic Fog](./tutorial/basic_fog.md)
   * Sky
   * Moonlight
   * Sunlight

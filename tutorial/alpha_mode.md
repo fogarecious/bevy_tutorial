@@ -125,6 +125,6 @@ Result:
 
 We can see from the shadow of the right sphere that the sphere is indeed transparent.
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Basic Fog](./basic_fog.md)
 
 :blue_book: Back: [Table of contents](./../README.md)
