@@ -1,10 +1,10 @@
-# Unofficial Tutorial Of Bevy
+# Simple Tutorial Of Bevy
 
 [Bevy](https://bevyengine.org/) is a game engine built in [Rust](https://www.rust-lang.org/).
 This tutorial serves as a quick start for [Bevy](https://bevyengine.org/).
 We try to keep each part of the tutorial as simple as possible.
 
-(Currently, this tutorial is for version 0.12.1.)
+(Currently, this tutorial is for version `0.12.1`.)
 
 ## Basic
 
@@ -139,7 +139,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Alpha Mode](./tutorial/alpha_mode.md)
 * Fog
   * [Basic Fog](./tutorial/basic_fog.md)
-  * Sky
+  * [Sky](./tutorial/sky.md)
   * Moonlight
   * Sunlight
 * Skipping The White Window

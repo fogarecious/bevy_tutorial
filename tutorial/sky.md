@@ -1,31 +1,36 @@
-# Basic Fog
+# Sky
 
-Fog in a 3D scene makes objects near the camera clear and objects far away from the camera foggy.
+Although we enable fog in the previous tutorial, the background is dark, which makes the scene odd.
+To fix this, we can add an object that acts as the sky, and then we will have fog in the sky as well.
 
-To enable the fog, we use [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) together with [Camera3dBundle](https://docs.rs/bevy/latest/bevy/core_pipeline/core_3d/struct.Camera3dBundle.html).
-We group the two in the same entity.
+Our sky is a large enough sphere that contains all the other objects in the scene.
 
 ```rust
 commands.spawn((
-    Camera3dBundle {
-        transform: Transform::from_xyz(2., 1., 2.).looking_at(Vec3::new(0., 0.5, 0.), Vec3::Y),
+    PbrBundle {
+        mesh: meshes.add(
+            UVSphere {
+                radius: 10.,
+                ..default()
+            }
+            .into(),
+        ),
+        material: materials.add(StandardMaterial {
+            cull_mode: None,
+            ..default()
+        }),
         ..default()
     },
-    FogSettings {
-        color: Color::WHITE,
-        falloff: FogFalloff::from_visibility_contrast_squared(0.5, 0.99),
-        ..default()
-    },
+    NotShadowCaster,
 ));
 ```
 
-The [color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.color) of [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) is the color of the fog.
-The brightness of the [color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.color) specifies how strong the fog is.
+In most of cases, our camera is inside the large sphere.
+So the camera must see the sphere from its inner side.
+To do so, we set [cull_mode](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html#structfield.cull_mode) in [StandardMaterial](https://docs.rs/bevy/latest/bevy/pbr/struct.StandardMaterial.html) to [None](https://doc.rust-lang.org/nightly/core/option/enum.Option.html#variant.None).
 
-The [falloff](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.falloff) of [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) controls how the fog changes from clear to foggy.
-The value of [falloff](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.falloff) is a [FogFalloff](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html).
-Usually, it is either [Linear](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Linear), [Exponential](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Exponential) or [ExponentialSquared](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.ExponentialSquared).
-We use [from_visibility_contrast_squared](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#method.from_visibility_contrast_squared) to construct a [FogFalloff](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html) of [ExponentialSquared](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.ExponentialSquared).
+We also add the component [NotShadowCaster](https://docs.rs/bevy/latest/bevy/pbr/struct.NotShadowCaster.html), which is spawned together with the [PbrBundle](https://docs.rs/bevy/latest/bevy/pbr/type.PbrBundle.html) of the large sphere.
+This ensures that the large sphere provides no shadows on the other objects.
 
 The full code is as follows:
 
@@ -37,8 +42,8 @@ use bevy::{
     ecs::system::{Commands, ResMut},
     math::Vec3,
     pbr::{
-        DirectionalLight, DirectionalLightBundle, FogFalloff, FogSettings, PbrBundle,
-        StandardMaterial,
+        DirectionalLight, DirectionalLightBundle, FogFalloff, FogSettings, NotShadowCaster,
+        PbrBundle, StandardMaterial,
     },
     render::{
         color::Color,
@@ -134,6 +139,25 @@ fn setup(
         ..default()
     });
 
+    // sky
+    commands.spawn((
+        PbrBundle {
+            mesh: meshes.add(
+                UVSphere {
+                    radius: 10.,
+                    ..default()
+                }
+                .into(),
+            ),
+            material: materials.add(StandardMaterial {
+                cull_mode: None,
+                ..default()
+            }),
+            ..default()
+        },
+        NotShadowCaster,
+    ));
+
     // light
     commands.spawn(DirectionalLightBundle {
         directional_light: DirectionalLight {
@@ -149,8 +173,8 @@ fn setup(
 
 Result:
 
-![Basic Fog](./pic/basic_fog.png)
+![Sky](./pic/sky.png)
 
-:arrow_right:  Next: [Sky](./sky.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
