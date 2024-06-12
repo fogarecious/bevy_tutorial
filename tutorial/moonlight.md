@@ -1,28 +1,26 @@
-# Basic Fog
+# Moonlight
 
-Fog in a 3D scene makes objects near the camera clear and objects far away from the camera foggy.
+We can use fog to make special light, such as moonlight or sunlight.
 
-To enable the fog, we use [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) together with [Camera3dBundle](https://docs.rs/bevy/latest/bevy/core_pipeline/core_3d/struct.Camera3dBundle.html).
-We group the two in the same entity.
+To create moonlight, we use [FogFalloff::Atmospheric](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Atmospheric) in [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html).
 
 ```rust
 commands.spawn((
     Camera3dBundle::default(),
     FogSettings {
-        color: Color::WHITE,
-        falloff: FogFalloff::from_visibility_contrast_squared(0.5, 0.99),
+        color: Color::rgb(0.25, 0.25, 0.25),
+        falloff: FogFalloff::from_visibility_color(3., Color::BLUE),
         ..default()
     },
 ));
 ```
 
-The [color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.color) of [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) is the color of the fog.
-The brightness of the [color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.color) specifies how strong the fog is.
+To construct [FogFalloff::Atmospheric](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Atmospheric), we can use [FogFalloff::from_visibility_color](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#method.from_visibility_color), which takes a visibility and a color as its two parameters.
+The visibility parameter is a distance that the moonlight works in.
+The color parameter is the color of the moonlight.
 
-The [falloff](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.falloff) of [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) controls how the fog changes from clear to foggy.
-The value of [falloff](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.falloff) is a [FogFalloff](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html).
-Usually, it is either [Linear](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Linear), [Exponential](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Exponential) or [ExponentialSquared](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.ExponentialSquared).
-We use [from_visibility_contrast_squared](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#method.from_visibility_contrast_squared) to construct a [FogFalloff](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html) of [ExponentialSquared](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.ExponentialSquared).
+The [color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.color) of [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) controls how strong the moonlight is.
+We use a lower brightness in the example to create a weaker moonlight.
 
 The full code is as follows:
 
@@ -34,8 +32,8 @@ use bevy::{
     ecs::system::{Commands, ResMut},
     math::Vec3,
     pbr::{
-        DirectionalLight, DirectionalLightBundle, FogFalloff, FogSettings, PbrBundle,
-        StandardMaterial,
+        DirectionalLight, DirectionalLightBundle, FogFalloff, FogSettings, NotShadowCaster,
+        PbrBundle, StandardMaterial,
     },
     render::{
         color::Color,
@@ -67,8 +65,8 @@ fn setup(
             ..default()
         },
         FogSettings {
-            color: Color::WHITE,
-            falloff: FogFalloff::from_visibility_contrast_squared(0.5, 0.99),
+            color: Color::rgb(0.25, 0.25, 0.25),
+            falloff: FogFalloff::from_visibility_color(3., Color::BLUE),
             ..default()
         },
     ));
@@ -131,6 +129,25 @@ fn setup(
         ..default()
     });
 
+    // sky
+    commands.spawn((
+        PbrBundle {
+            mesh: meshes.add(
+                UVSphere {
+                    radius: 10.,
+                    ..default()
+                }
+                .into(),
+            ),
+            material: materials.add(StandardMaterial {
+                cull_mode: None,
+                ..default()
+            }),
+            ..default()
+        },
+        NotShadowCaster,
+    ));
+
     // light
     commands.spawn(DirectionalLightBundle {
         directional_light: DirectionalLight {
@@ -146,8 +163,8 @@ fn setup(
 
 Result:
 
-![Basic Fog](./pic/basic_fog.png)
+![Moonlight](./pic/moonlight.png)
 
-:arrow_right:  Next: [Sky](./sky.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)
