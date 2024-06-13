@@ -1,26 +1,30 @@
-# Moonlight
+# Sunlight
 
-We can use fog to make special light, such as moonlight or sunlight.
-
-To create moonlight, we use [FogFalloff::Atmospheric](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Atmospheric) in [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html).
+For sunlight, we can use [FogFalloff::from_visibility_colors](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#method.from_visibility_colors) together with [directional_light_color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.directional_light_color) and [directional_light_exponent](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.directional_light_exponent) in [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html).
 
 ```rust
 commands.spawn((
     Camera3dBundle::default(),
     FogSettings {
-        color: Color::rgb(0.25, 0.25, 0.25),
-        falloff: FogFalloff::from_visibility_color(3., Color::BLUE),
+        color: Color::rgb(0.5, 0.5, 0.5),
+        falloff: FogFalloff::from_visibility_colors(10., Color::BLUE, Color::WHITE),
+        directional_light_color: Color::WHITE,
+        directional_light_exponent: 50.,
         ..default()
     },
 ));
 ```
 
-To construct [FogFalloff::Atmospheric](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#variant.Atmospheric), we can use [FogFalloff::from_visibility_color](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#method.from_visibility_color), which takes a visibility and a color as its two parameters.
+The [from_visibility_colors](https://docs.rs/bevy/latest/bevy/pbr/enum.FogFalloff.html#method.from_visibility_colors) takes `visibility`, `extinction_color` and `inscattering_color` as its parameters.
 The visibility parameter is a distance from the camera where objects in the range remain their materials.
-The color parameter is the color of the moonlight.
+The inscattering color parameter is the color of the sun.
+The extinction color parameter is the color when the sun goes weak.
 
-The [color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.color) of [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) controls how strong the moonlight is.
-We use a lower brightness in the example to create a weaker moonlight.
+The [directional_light_color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.directional_light_color) controls the brightness of the sun.
+The [directional_light_exponent](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.directional_light_exponent) specifies the size of the sun.
+The larger the value, the smaller the sun.
+
+The [color](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html#structfield.color) of [FogSettings](https://docs.rs/bevy/latest/bevy/pbr/struct.FogSettings.html) controls the diffusion of the sun.
 
 The full code is as follows:
 
@@ -65,8 +69,10 @@ fn setup(
             ..default()
         },
         FogSettings {
-            color: Color::rgb(0.25, 0.25, 0.25),
-            falloff: FogFalloff::from_visibility_color(3., Color::BLUE),
+            color: Color::rgb(0.5, 0.5, 0.5),
+            falloff: FogFalloff::from_visibility_colors(10., Color::BLUE, Color::WHITE),
+            directional_light_color: Color::WHITE,
+            directional_light_exponent: 50.,
             ..default()
         },
     ));
@@ -155,7 +161,7 @@ fn setup(
             shadows_enabled: true,
             ..default()
         },
-        transform: Transform::default().looking_to(Vec3::new(-1., -3., 0.), Vec3::Y),
+        transform: Transform::default().looking_to(Vec3::new(2., -0.2, 0.5), Vec3::Y),
         ..default()
     });
 }
@@ -163,8 +169,8 @@ fn setup(
 
 Result:
 
-![Moonlight](./pic/moonlight.png)
+![Sunlight](./pic/sunlight.png)
 
-:arrow_right:  Next: [Sunlight](./sunlight.md)
+<!-- :arrow_right:  Next:  -->
 
 :blue_book: Back: [Table of contents](./../README.md)

@@ -141,7 +141,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Basic Fog](./tutorial/basic_fog.md)
   * [Sky](./tutorial/sky.md)
   * [Moonlight](./tutorial/moonlight.md)
-  * Sunlight
+  * [Sunlight](./tutorial/sunlight.md)
 * Skipping The White Window
   <!-- window_settings.rs -->
   <!-- Window Settings -->
