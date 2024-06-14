@@ -171,6 +171,6 @@ Result:
 
 ![Sunlight](./pic/sunlight.png)
 
-<!-- :arrow_right:  Next:  -->
+:arrow_right:  Next: [Skipping The White Window](./skipping_the_white_window.md)
 
 :blue_book: Back: [Table of contents](./../README.md)

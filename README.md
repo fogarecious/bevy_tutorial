@@ -142,26 +142,7 @@ We try to keep each part of the tutorial as simple as possible.
   * [Sky](./tutorial/sky.md)
   * [Moonlight](./tutorial/moonlight.md)
   * [Sunlight](./tutorial/sunlight.md)
-* Skipping The White Window
-  <!-- window_settings.rs -->
-  <!-- Window Settings -->
-<!-- ? multiple windows/cameras, camera background, 2d+3d -->
-<!-- draw on images -->
-
-<!-- animation -->
-<!-- sprite_sheet.rs -->
-
-<!-- * User Interfaces -->
-
-<!-- * Debug -->
-  <!-- * Using Local Variables In Systems
-  15, SystemParamFunction -->
-  <!-- gizmos -->
-  <!-- 2d_gizmos.rs -->
-
-<!-- audio -->
-<!-- wasm, my practice, 26_wasm_test -->
-<!-- beyond bevy -->
+* [Skipping The White Window](./tutorial/skipping_the_white_window.md)
 
 ## See Also
 
