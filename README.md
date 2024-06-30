@@ -1,4 +1,4 @@
-# Simple Tutorial Of Bevy
+# Simple Bevy Tutorial
 
 [Bevy](https://bevyengine.org/) is a game engine built in [Rust](https://www.rust-lang.org/).
 This tutorial serves as a quick start for [Bevy](https://bevyengine.org/).
