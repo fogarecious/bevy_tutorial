@@ -4,7 +4,7 @@
 This tutorial serves as a quick start for [Bevy](https://bevyengine.org/).
 We try to keep each part of the tutorial as simple as possible.
 
-(Currently, this tutorial is for version `0.12.1`.)
+(Currently, most of this tutorial are for version `0.12.1` and some are for `0.15.x`.)
 
 ## Basic
 
